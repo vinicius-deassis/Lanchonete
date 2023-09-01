@@ -19,12 +19,16 @@ import lanchonete.Sanduiche;
 public class Sanduiches extends javax.swing.JFrame {    
     lanchonete.Carrinho carrinho = new Carrinho();
     private ArrayList<Sanduiche> sandubas;
+    public String name,num,bairro,pay;
     
     /**
      * Creates new form Sanduiches
      */
-    public Sanduiches(String name,String bairro, String num, String pay) {
-        Cliente cliente1 =  new Cliente(name,bairro,num,pay);
+    public Sanduiches(String name,Object bairro, String num, Object pay) {
+        this.name = name;
+        this.bairro = (String)bairro;
+        this.num = num;
+        this.pay = (String) pay;
         initComponents();
      
     }
@@ -367,7 +371,7 @@ public class Sanduiches extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonVerCarrinhoActionPerformed
 
     private void buttonFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonFinalizarActionPerformed
-        Cliente cliente1 =  new Cliente(this.name,bairro,num,pay);
+        Cliente cliente1 =  new Cliente(name,bairro,num,pay);
         if (carrinho.getSandubas().isEmpty()) {
                     JOptionPane.showMessageDialog(null, "O carrinho está vazio!");
                 } else {
