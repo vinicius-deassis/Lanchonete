@@ -208,6 +208,7 @@ public class InterfaceUser{
                             + "\n\nCarrinho de Compras: \n" + sanduichesTexto
                             + "\nValor total: R$ " + valorTotal
                             + "\nForma de Pagamento: " + cliente1.getPay()
+                            + "O de cima me mamou"
                         );
         
                         run = false;
