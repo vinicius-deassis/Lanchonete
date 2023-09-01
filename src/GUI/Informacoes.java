@@ -35,7 +35,7 @@ public class Informacoes extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         inputTel = new javax.swing.JTextField();
-        buttonLogin1 = new javax.swing.JButton();
+        buttonCardapio = new javax.swing.JButton();
         comboPay = new javax.swing.JComboBox<>();
         comboBairro = new javax.swing.JComboBox<>();
 
@@ -70,10 +70,10 @@ public class Informacoes extends javax.swing.JFrame {
             }
         });
 
-        buttonLogin1.setText("Cardápio");
-        buttonLogin1.addActionListener(new java.awt.event.ActionListener() {
+        buttonCardapio.setText("Cardápio");
+        buttonCardapio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonLogin1ActionPerformed(evt);
+                buttonCardapioActionPerformed(evt);
             }
         });
 
@@ -122,7 +122,7 @@ public class Informacoes extends javax.swing.JFrame {
                 .addGap(89, 89, 89))
             .addGroup(layout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addComponent(buttonLogin1)
+                .addComponent(buttonCardapio)
                 .addGap(27, 27, 27)
                 .addComponent(ButtonMontar, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -151,7 +151,7 @@ public class Informacoes extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ButtonMontar)
-                    .addComponent(buttonLogin1))
+                    .addComponent(buttonCardapio))
                 .addGap(20, 20, 20))
         );
 
@@ -169,9 +169,13 @@ public class Informacoes extends javax.swing.JFrame {
         Object pag = comboPay.getSelectedItem();
         
         Cliente c = new Cliente(nome,tel,endereco,pag);
-        System.out.println(c);
+
         
-        new Montagem().setVisible(true);
+        Montagem mtg = new Montagem();
+        mtg.setVisible(true);
+        
+        
+        
         
     }//GEN-LAST:event_ButtonMontarActionPerformed
 
@@ -179,9 +183,12 @@ public class Informacoes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_inputTelActionPerformed
 
-    private void buttonLogin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonLogin1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buttonLogin1ActionPerformed
+    private void buttonCardapioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCardapioActionPerformed
+        CardapioGUI c =  new CardapioGUI();
+        c.setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_buttonCardapioActionPerformed
 
     private void comboPayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboPayActionPerformed
         // TODO add your handling code here:
@@ -231,7 +238,7 @@ public class Informacoes extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonMontar;
-    private javax.swing.JButton buttonLogin1;
+    private javax.swing.JButton buttonCardapio;
     private javax.swing.JComboBox<String> comboBairro;
     public javax.swing.JComboBox<String> comboPay;
     private javax.swing.JTextField inputNome;

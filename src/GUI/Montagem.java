@@ -5,7 +5,9 @@
 package GUI;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 import lanchonete.Pedido;
+import lanchonete.Sanduba;
 /**
  *
  * @author USER
@@ -107,6 +109,11 @@ public class Montagem extends javax.swing.JFrame {
         comboTam.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pequeno", "Medio", "Grande" }));
 
         Premontados.setText("Pré-Montados");
+        Premontados.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PremontadosActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -166,9 +173,9 @@ public class Montagem extends javax.swing.JFrame {
                     .addComponent(comboPao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel5)
-                        .addComponent(jLabel6))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jLabel5))
                     .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -198,18 +205,15 @@ public class Montagem extends javax.swing.JFrame {
     private void buttonGoCarrinhoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonGoCarrinhoActionPerformed
         Pedido p = new Pedido();
         
-        ArrayList molhos = p.getMo();
-        ArrayList proteinas = p.getPro();
-        ArrayList acomps = p.getAcom();
-
+        String mol = (String) comboMolho.getSelectedItem();
+        String tam = (String)comboTam.getSelectedItem();
+        String pao = (String)comboPao.getSelectedItem();
+        String pro = (String)comboPro.getSelectedItem();
+        String sal = (String)comboSalada.getSelectedItem();
+        String acomp = (String)comboAcomp.getSelectedItem();
         
-        Object mol = comboMolho.getSelectedItem();
-        Object pao = comboPao.getSelectedItem();
-        Object pro = comboPro.getSelectedItem();
-       
-        
-        System.out.println(p.getPreco(mol, molhos));
-        
+        Sanduba s = new Sanduba(pro,tam,pao,sal,mol,acomp);
+        JOptionPane.showMessageDialog(null, "O total ficou R$"+s.calcularPreco()+" reais.");
         
     }//GEN-LAST:event_buttonGoCarrinhoActionPerformed
 
@@ -224,6 +228,10 @@ public class Montagem extends javax.swing.JFrame {
     private void comboSaladaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboSaladaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_comboSaladaActionPerformed
+
+    private void PremontadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PremontadosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PremontadosActionPerformed
 
     /**
      * @param args the command line arguments

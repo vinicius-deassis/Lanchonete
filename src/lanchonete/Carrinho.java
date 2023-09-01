@@ -13,11 +13,11 @@ import java.util.ArrayList;
 public class Carrinho{
 
     private ArrayList<Sanduiche> sandubas;
-    private double total;
+    private float total;
 
     public Carrinho(){
         this.sandubas = new ArrayList<Sanduiche>();
-        this.total = 0.0;
+        this.total = 0.0f;
     }
 
     public void adicionarSanduba(Sanduiche sanduba){
@@ -32,7 +32,7 @@ public class Carrinho{
 
     public void limparCarrinho(){
         this.sandubas.clear();
-        this.total = 0.0;
+        this.total = 0.0f;
     }
     
     public String verCarrinho(){
@@ -61,15 +61,15 @@ public class Carrinho{
     public void setSandubas(ArrayList<Sanduiche> sandubas){
         this.sandubas = sandubas;
     }
-    public double getTotal(){
+    public float getTotal(){
         return total;
     }
     
 
      // método que calcula o total do pedido
 
-     public double calcularTotal(ArrayList<Sanduiche> sandubas){
-        double total = 0.0;
+     public float calcularTotal(ArrayList<Sanduiche> sandubas){
+        float total = 0f;
 
         for (Sanduiche sanduba: sandubas){
             total += sanduba.getPreco();

@@ -50,6 +50,11 @@ public class AddSandubaGUI extends javax.swing.JFrame {
         });
 
         jBoxTamanho.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione um tamanho...", "Pequena", "Média", "Grande" }));
+        jBoxTamanho.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBoxTamanhoActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 0, 0));
@@ -166,6 +171,10 @@ public class AddSandubaGUI extends javax.swing.JFrame {
         sandubas = carrinho.getSandubas();
         JOptionPane.showMessageDialog(null, carrinho.verCarrinho());
     }//GEN-LAST:event_jButtonVerCarrinhoActionPerformed
+
+    private void jBoxTamanhoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBoxTamanhoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBoxTamanhoActionPerformed
     
     public ArrayList<Sanduiche> getSandubas(){
         return this.sandubas;

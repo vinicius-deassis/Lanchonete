@@ -74,14 +74,14 @@ public class Cliente{
     public void setPay(Object pay) {
         this.pay = pay;
     }
-}
     
- /*   @Override
+    @Override
     public String toString(){
-        return "\nNome: "+nome+"\nbairroeço: "+bairro+"\nTelefone: "+telefone+
-                "\nPagamento: "+pay;
+        return "\nNome: "+getNome()+"\nbairro: "+getBairro()+"\nTelefone: "+getTelefone()+
+                "\nPagamento: "+getPay();
     }
-    
+}
+ /*   
     public String getbairroeco(){
         String bairroeco = this.bairro + "," + this.pay;
         return bairroeco;

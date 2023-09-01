@@ -13,9 +13,9 @@ package lanchonete;
  */
 public class Sanduiche{
 
-    private String sabor;
-    private String tamanho;
-    private float preco;
+    protected String sabor;
+    protected String tamanho;
+    protected float preco;
 
     public Sanduiche (String sabor, String tamanho){
         this.sabor = sabor;

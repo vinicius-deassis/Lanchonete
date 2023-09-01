@@ -5,40 +5,72 @@
 package lanchonete;
 import java.util.ArrayList;
 import lanchonete.Pedido;
-
+ 
 /**
  *
  * @author USER
  */
 public class Sanduba extends Sanduiche{
-    private String pao,salada,molho;
-    private float preco;
-    private Pedido p;
+    protected String pao,salada,molho,acomp;
+    protected float preco;
 
-    public Sanduba(String sabor, String tamanho, String pao, String salada, String molho) {
+    public Sanduba(String sabor, String tamanho, String pao, String salada, 
+            String molho , String acomp) {
         super(sabor, tamanho);
         this.molho = molho;
         this.pao = pao;
         this.salada = salada;
-        this.preco = calcularPreco(tamanho);
-        
+        this.acomp = acomp;
+        this.preco = 0;
+    }
+    public void setPreco(float preco){
+        this.preco = preco;
+    }
+
+    public String getPao() {
+        return pao;
+    }
+
+    public String getSalada() {
+        return salada;
+    }
+
+    public String getMolho() {
+        return molho;
+    }
+    public String getAcompanhamento() {
+        return acomp;
     }
     
-    @Override
-    public float calcularPreco(String tamanho){
-        ArrayList acomp = p.getAcom();
-        ArrayList pro = p.getPro();
-        p.getMo();
-        
-        if (tamanho.equals("Pequena")){
-            
-            
-        }else if (tamanho.equals("Média")){
-            this.preco = 40.00f;
-        } else if (tamanho.equals("Grande")){
-            this.preco = 60.00f;
+    public float calcularPreco(){
+        Pedido p = new Pedido();
+        float resultado= 0;
+        if(this.getTamanho().equals("Pequeno")){         
+            resultado = (p.getPreco(this.getSabor(), p.getPro())+
+                        p.getPreco(this.getMolho(), p.getMo())+
+                        p.getPreco(this.getSalada(), p.getSal())+
+                        p.getPreco(this.getAcompanhamento(), p.getAcom())+
+                        p.getPreco(this.getPao(),p.getPaes())+10
+                                );         
         }
-        return this.preco;
+        else if(this.getTamanho().equals("Medio")){         
+            resultado = (p.getPreco(this.getSabor(), p.getPro())+
+                        p.getPreco(this.getMolho(), p.getMo())+
+                        p.getPreco(this.getSalada(), p.getSal())+
+                        p.getPreco(this.getAcompanhamento(), p.getAcom())+
+                        p.getPreco(this.getPao(),p.getPaes())+15
+                                );         
+        }
+        else if(this.getTamanho().equals("Grande")){         
+            resultado = (p.getPreco(this.getSabor(), p.getPro())+
+                        p.getPreco(this.getMolho(), p.getMo())+
+                        p.getPreco(this.getSalada(), p.getSal())+
+                        p.getPreco(this.getAcompanhamento(), p.getAcom())+
+                        p.getPreco(this.getPao(),p.getPaes())+20
+                                );         
+        }
+        this.setPreco(resultado);
+        return resultado;
     }
     
 }

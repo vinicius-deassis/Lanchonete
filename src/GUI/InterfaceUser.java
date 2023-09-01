@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package lanchonete;
+package GUI;
 import java.util.ArrayList;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
@@ -192,7 +192,7 @@ public class InterfaceUser{
                         } else {
                            
                             sandubas = carrinho.getSandubas();
-                            double valorTotal = carrinho.calcularTotal(sandubas);
+                            float valorTotal = carrinho.calcularTotal(sandubas);
                             String sanduichesTexto = "";
                         
                             for (Sanduiche p : carrinho.getSandubas()) {

@@ -120,9 +120,7 @@ public class CarrinhoGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         Montagem addSanduba = new Montagem();
-        addSanduba.setVisible(true);
-       
-        
+        addSanduba.setVisible(true);        
     }//GEN-LAST:event_jButtonAdicionarSandubaActionPerformed
 
     private void jButtonRemoverSandubaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRemoverSandubaActionPerformed
