@@ -162,8 +162,7 @@ public class AddSandubaGUI extends javax.swing.JFrame {
             
            
             JOptionPane.showMessageDialog(null,"sanduiche de " + saborsanduba + " adicionada ao carrinho!");
-    }
-
+        }
     }//GEN-LAST:event_jButtonAddSandubaActionPerformed
 
     private void jButtonVerCarrinhoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVerCarrinhoActionPerformed

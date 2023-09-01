@@ -171,7 +171,8 @@ public class Informacoes extends javax.swing.JFrame {
         Cliente c = new Cliente(nome,tel,endereco,pag);
 
         
-        Montagem mtg = new Montagem();
+        Sanduiches mtg = new Sanduiches(inputNome.getText(),(String) comboBairro.getSelectedItem(),
+        inputTel.getText(),(String) comboPay.getSelectedItem());
         mtg.setVisible(true);
         
         

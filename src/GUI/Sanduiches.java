@@ -4,17 +4,29 @@
  */
 package GUI;
 
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+import lanchonete.Carrinho;
+import lanchonete.Cliente;
+import lanchonete.Pedido;
+import lanchonete.Sanduba;
+import lanchonete.Sanduiche;
+
 /**
  *
  * @author USER
  */
-public class Sanduiches extends javax.swing.JFrame {
-
+public class Sanduiches extends javax.swing.JFrame {    
+    lanchonete.Carrinho carrinho = new Carrinho();
+    private ArrayList<Sanduiche> sandubas;
+    
     /**
      * Creates new form Sanduiches
      */
-    public Sanduiches() {
+    public Sanduiches(String name,String bairro, String num, String pay) {
+        Cliente cliente1 =  new Cliente(name,bairro,num,pay);
         initComponents();
+     
     }
 
     /**
@@ -40,14 +52,14 @@ public class Sanduiches extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         comboPao = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
+        ButtonAddSanduba = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jBoxSanduba = new javax.swing.JComboBox<>();
         jBoxTamanho = new javax.swing.JComboBox<>();
-        jButtonAddSanduba = new javax.swing.JButton();
-        jButtonVerCarrinho1 = new javax.swing.JButton();
-        jButtonVerCarrinho2 = new javax.swing.JButton();
+        buttonAddSanduiche = new javax.swing.JButton();
+        buttonVerCarrinho = new javax.swing.JButton();
+        buttonFinalizar = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -91,6 +103,11 @@ public class Sanduiches extends javax.swing.JFrame {
         comboTam.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pequeno", "Medio", "Grande" }));
 
         comboMolho.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ketchup", "Barbecue", "Maionese" }));
+        comboMolho.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboMolhoActionPerformed(evt);
+            }
+        });
 
         comboAcomp.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Batata", "Coca", "Nuggets" }));
         comboAcomp.addActionListener(new java.awt.event.ActionListener() {
@@ -117,11 +134,16 @@ public class Sanduiches extends javax.swing.JFrame {
                 comboPaoComponentAdded(evt);
             }
         });
-
-        jButton1.setText("Adicionar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        comboPao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                comboPaoActionPerformed(evt);
+            }
+        });
+
+        ButtonAddSanduba.setText("Adicionar");
+        ButtonAddSanduba.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonAddSandubaActionPerformed(evt);
             }
         });
 
@@ -145,24 +167,24 @@ public class Sanduiches extends javax.swing.JFrame {
             }
         });
 
-        jButtonAddSanduba.setText("Adicionar");
-        jButtonAddSanduba.addActionListener(new java.awt.event.ActionListener() {
+        buttonAddSanduiche.setText("Adicionar");
+        buttonAddSanduiche.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonAddSandubaActionPerformed(evt);
+                buttonAddSanduicheActionPerformed(evt);
             }
         });
 
-        jButtonVerCarrinho1.setText("Ver Carrinho");
-        jButtonVerCarrinho1.addActionListener(new java.awt.event.ActionListener() {
+        buttonVerCarrinho.setText("Ver Carrinho");
+        buttonVerCarrinho.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonVerCarrinho1ActionPerformed(evt);
+                buttonVerCarrinhoActionPerformed(evt);
             }
         });
 
-        jButtonVerCarrinho2.setText("Finalizar carrinho");
-        jButtonVerCarrinho2.addActionListener(new java.awt.event.ActionListener() {
+        buttonFinalizar.setText("Finalizar carrinho");
+        buttonFinalizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonVerCarrinho2ActionPerformed(evt);
+                buttonFinalizarActionPerformed(evt);
             }
         });
 
@@ -181,7 +203,7 @@ public class Sanduiches extends javax.swing.JFrame {
                 .addGap(94, 94, 94)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(ButtonAddSanduba)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel7)
@@ -222,9 +244,9 @@ public class Sanduiches extends javax.swing.JFrame {
                         .addGap(39, 39, 39)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButtonVerCarrinho1)
+                                .addComponent(buttonVerCarrinho)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButtonVerCarrinho2)
+                                .addComponent(buttonFinalizar)
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jBoxSanduba, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -241,7 +263,7 @@ public class Sanduiches extends javax.swing.JFrame {
                         .addGap(56, 56, 56))
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonAddSanduba)
+                        .addComponent(buttonAddSanduiche)
                         .addGap(95, 95, 95))))
         );
         layout.setVerticalGroup(
@@ -276,12 +298,12 @@ public class Sanduiches extends javax.swing.JFrame {
                     .addComponent(comboMolho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(comboAcomp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(comboTam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonAddSanduba))
+                    .addComponent(buttonAddSanduiche))
                 .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButtonVerCarrinho1)
-                    .addComponent(jButtonVerCarrinho2))
+                    .addComponent(ButtonAddSanduba)
+                    .addComponent(buttonVerCarrinho)
+                    .addComponent(buttonFinalizar))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
@@ -304,47 +326,84 @@ public class Sanduiches extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_comboPaoComponentAdded
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void ButtonAddSandubaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonAddSandubaActionPerformed
+        Pedido p = new Pedido();
+        
+        String mol = (String) comboMolho.getSelectedItem();
+        String tam = (String)comboTam.getSelectedItem();
+        String pao = (String)comboPao.getSelectedItem();
+        String pro = (String)comboPro.getSelectedItem();
+        String sal = (String)comboSalada.getSelectedItem();
+        String acomp = (String)comboAcomp.getSelectedItem();
+        
+        Sanduba s = new Sanduba(pro,tam,pao,sal,mol,acomp);
+        JOptionPane.showMessageDialog(null, "O total ficou R$"+s.calcularPreco()+" reais.");
+        carrinho.adicionarSanduba(s);
+    }//GEN-LAST:event_ButtonAddSandubaActionPerformed
 
-    private void jButtonAddSandubaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAddSandubaActionPerformed
-        // TODO add your handling code here:
+    private void buttonAddSanduicheActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAddSanduicheActionPerformed
         String saborsanduba = (String) jBoxSanduba.getSelectedItem();
         String tamanhosanduba = (String) jBoxTamanho.getSelectedItem();
         if ((saborsanduba.equals("Selecione um sanduiche...")) || (tamanhosanduba.equals("Selecione um tamanho..."))){
             JOptionPane.showMessageDialog(null, "Selecione um sabor ou um tamanho válido!");
-        }   else{
+    }   else{
             Sanduiche sanduba = new Sanduiche(saborsanduba, tamanhosanduba);
-            carrinho.adicionarSanduba(sanduba);
-
+            carrinho.adicionarSanduba(sanduba);          
             JOptionPane.showMessageDialog(null,"sanduiche de " + saborsanduba + " adicionada ao carrinho!");
-        }
-    }//GEN-LAST:event_jButtonAddSandubaActionPerformed
+        }  
+    }//GEN-LAST:event_buttonAddSanduicheActionPerformed
 
     private void jBoxSandubaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBoxSandubaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jBoxSandubaActionPerformed
 
     private void jButtonVerCarrinhoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVerCarrinhoActionPerformed
-        // TODO add your handling code here:
-        sandubas = carrinho.getSandubas();
-        JOptionPane.showMessageDialog(null, carrinho.verCarrinho());
+        
     }//GEN-LAST:event_jButtonVerCarrinhoActionPerformed
 
-    private void jButtonVerCarrinho1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVerCarrinho1ActionPerformed
-        // TODO add your handling code here:
+    private void buttonVerCarrinhoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonVerCarrinhoActionPerformed
         sandubas = carrinho.getSandubas();
         JOptionPane.showMessageDialog(null, carrinho.verCarrinho());
-    }//GEN-LAST:event_jButtonVerCarrinho1ActionPerformed
+    }//GEN-LAST:event_buttonVerCarrinhoActionPerformed
 
-    private void jButtonVerCarrinho2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVerCarrinho2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonVerCarrinho2ActionPerformed
+    private void buttonFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonFinalizarActionPerformed
+        Cliente cliente1 =  new Cliente(this.name,bairro,num,pay);
+        if (carrinho.getSandubas().isEmpty()) {
+                    JOptionPane.showMessageDialog(null, "O carrinho está vazio!");
+                } else {
+
+                    sandubas = carrinho.getSandubas();
+                    float valorTotal = carrinho.calcularTotal(sandubas);
+                    String sanduichesTexto = "";
+
+                    for (Sanduiche p : carrinho.getSandubas()) {
+                        sanduichesTexto += "sanduiche de " + p.getSabor() + " - " + p.getTamanho() + " - R$" + p.getPreco() + "\n";
+                }
+
+                JOptionPane.showMessageDialog(null, 
+                    ""
+                    + "========== Nota Fiscal =========="
+                    + "\nCliente: " + cliente1.getNome()
+                    + "\nTelefone: " + cliente1.getTelefone()
+                    + "\nBairro: " + cliente1.getBairro()
+                    + "\n\nCarrinho de Compras: \n" + sanduichesTexto
+                    + "\nValor total: R$ " + valorTotal
+                    + "\nForma de Pagamento: " + cliente1.getPay()
+                );
+            }
+    }//GEN-LAST:event_buttonFinalizarActionPerformed
 
     private void jBoxTamanhoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBoxTamanhoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jBoxTamanhoActionPerformed
+
+    private void comboPaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboPaoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboPaoActionPerformed
+
+    private void comboMolhoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboMolhoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboMolhoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -374,14 +433,15 @@ public class Sanduiches extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Sanduiches().setVisible(true);
-            }
-        });
+        
+        ;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ButtonAddSanduba;
+    private javax.swing.JButton buttonAddSanduiche;
+    public javax.swing.JButton buttonFinalizar;
+    private javax.swing.JButton buttonVerCarrinho;
     private javax.swing.JComboBox<String> comboAcomp;
     private javax.swing.JComboBox<String> comboMolho;
     private javax.swing.JComboBox<String> comboPao;
@@ -390,11 +450,7 @@ public class Sanduiches extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> comboTam;
     private javax.swing.JComboBox<String> jBoxSanduba;
     private javax.swing.JComboBox<String> jBoxTamanho;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButtonAddSanduba;
     private javax.swing.JButton jButtonVerCarrinho;
-    private javax.swing.JButton jButtonVerCarrinho1;
-    private javax.swing.JButton jButtonVerCarrinho2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
