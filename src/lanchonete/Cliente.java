@@ -12,11 +12,11 @@ public class Cliente{
 
     private String nome;
     private String telefone;
-    private String bairro;
+    private Object bairro;
     private Object pay;
     private final Carrinho carrinho;
 
-    public Cliente(String nome, String telefone, String bairro, Object pay){
+    public Cliente(String nome, String telefone, Object bairro, Object pay){
         this.nome = nome;
         this.telefone = telefone;
         this.bairro = bairro;
@@ -51,7 +51,7 @@ public class Cliente{
         this.nome = nome;
     }
 
-    public String getBairro() {
+    public Object getBairro() {
         return bairro;
     }
 

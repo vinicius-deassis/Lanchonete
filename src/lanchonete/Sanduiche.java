@@ -1,6 +1,6 @@
 package lanchonete;
 
-import javax.swing.JOptionPane;
+
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -15,7 +15,7 @@ public class Sanduiche{
 
     private String sabor;
     private String tamanho;
-    private double preco;
+    private float preco;
 
     public Sanduiche (String sabor, String tamanho){
         this.sabor = sabor;
@@ -39,18 +39,18 @@ public class Sanduiche{
         this.tamanho = tamanho;
     }
     
-    public double calcularPreco(String tamanho){
+    public float calcularPreco(String tamanho){
         if (tamanho.equals("Pequena")){
-            this.preco = 25.00;
+            this.preco = 15f;
             
         }else if (tamanho.equals("Média")){
-            this.preco = 40.00;
+            this.preco = 20f;
         } else if (tamanho.equals("Grande")){
-            this.preco = 60.00;
+            this.preco = 30f;
         }
         return this.preco;
     }
-    public double getPreco(){
+    public float getPreco(){
         return preco;
     }
 

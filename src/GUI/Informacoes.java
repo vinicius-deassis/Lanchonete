@@ -8,12 +8,12 @@ import lanchonete.Cliente;
  *
  * @author USER
  */
-public class InterfaceTeste extends javax.swing.JFrame {
+public class Informacoes extends javax.swing.JFrame {
 
     /**
      * Creates new form InterfaceTeste
      */
-    public InterfaceTeste() {
+    public Informacoes() {
         
         initComponents();
     }
@@ -31,19 +31,19 @@ public class InterfaceTeste extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         inputNome = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        inputEnder = new javax.swing.JTextField();
-        ButtonAvancar = new javax.swing.JButton();
+        ButtonMontar = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         inputTel = new javax.swing.JTextField();
         buttonLogin1 = new javax.swing.JButton();
         comboPay = new javax.swing.JComboBox<>();
+        comboBairro = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Bem vindo!");
 
-        jLabel2.setText("Nome");
+        jLabel2.setText("Nome:");
 
         inputNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -51,24 +51,18 @@ public class InterfaceTeste extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setText("Endereço");
+        jLabel3.setText("Bairro:");
 
-        inputEnder.addActionListener(new java.awt.event.ActionListener() {
+        ButtonMontar.setText("Montar");
+        ButtonMontar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                inputEnderActionPerformed(evt);
+                ButtonMontarActionPerformed(evt);
             }
         });
 
-        ButtonAvancar.setText("Avançar");
-        ButtonAvancar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonAvancarActionPerformed(evt);
-            }
-        });
+        jLabel4.setText("Pagamento:");
 
-        jLabel4.setText("Pagamento");
-
-        jLabel5.setText("Telefone");
+        jLabel5.setText("Telefone:");
 
         inputTel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,42 +85,47 @@ public class InterfaceTeste extends javax.swing.JFrame {
             }
         });
 
+        comboBairro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Boa Viagem", "Pina", "Piedade", "Ouro Preto", "Cabo de Santo Agostinho", "Várzea", "Água Fria", "Macaxeira", "Dois Irmãos", "Paulista", "Nova Descoberta", "Caxangá", "Outro" }));
+        comboBairro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboBairroActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addContainerGap()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel3))
-                                .addGap(24, 24, 24)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(inputEnder)
-                                    .addComponent(inputNome)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel4))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(inputTel)
-                                    .addComponent(comboPay, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(buttonLogin1)
-                        .addGap(27, 27, 27)
-                        .addComponent(ButtonAvancar, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 31, Short.MAX_VALUE)))
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3))
+                        .addGap(40, 40, 40)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(comboBairro, 0, 1, Short.MAX_VALUE)
+                            .addComponent(inputNome)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(inputTel)
+                            .addComponent(comboPay, 0, 163, Short.MAX_VALUE))))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(89, 89, 89))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(buttonLogin1)
+                .addGap(27, 27, 27)
+                .addComponent(ButtonMontar, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -139,8 +138,8 @@ public class InterfaceTeste extends javax.swing.JFrame {
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(inputEnder, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
+                    .addComponent(jLabel3)
+                    .addComponent(comboBairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(inputTel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -149,11 +148,11 @@ public class InterfaceTeste extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(comboPay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ButtonAvancar)
+                    .addComponent(ButtonMontar)
                     .addComponent(buttonLogin1))
-                .addGap(32, 32, 32))
+                .addGap(20, 20, 20))
         );
 
         pack();
@@ -163,22 +162,18 @@ public class InterfaceTeste extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_inputNomeActionPerformed
 
-    private void inputEnderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputEnderActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_inputEnderActionPerformed
-
-    private void ButtonAvancarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonAvancarActionPerformed
+    private void ButtonMontarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonMontarActionPerformed
         String nome = inputNome.getText();
-        String endereco = inputEnder.getText();
+        Object endereco = comboBairro.getSelectedItem();
         String tel = inputTel.getText();
         Object pag = comboPay.getSelectedItem();
         
-        Cliente c = new Cliente(nome,endereco,tel,pag);
+        Cliente c = new Cliente(nome,tel,endereco,pag);
         System.out.println(c);
         
-        new Pedido().setVisible(true);
+        new Montagem().setVisible(true);
         
-    }//GEN-LAST:event_ButtonAvancarActionPerformed
+    }//GEN-LAST:event_ButtonMontarActionPerformed
 
     private void inputTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputTelActionPerformed
         // TODO add your handling code here:
@@ -191,6 +186,10 @@ public class InterfaceTeste extends javax.swing.JFrame {
     private void comboPayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboPayActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_comboPayActionPerformed
+
+    private void comboBairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBairroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboBairroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -209,29 +208,32 @@ public class InterfaceTeste extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(InterfaceTeste.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Informacoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(InterfaceTeste.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Informacoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(InterfaceTeste.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Informacoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(InterfaceTeste.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Informacoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new InterfaceTeste().setVisible(true);
+                new Informacoes().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ButtonAvancar;
+    private javax.swing.JButton ButtonMontar;
     private javax.swing.JButton buttonLogin1;
+    private javax.swing.JComboBox<String> comboBairro;
     public javax.swing.JComboBox<String> comboPay;
-    private javax.swing.JTextField inputEnder;
     private javax.swing.JTextField inputNome;
     private javax.swing.JTextField inputTel;
     private javax.swing.JLabel jLabel1;
