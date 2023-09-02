@@ -109,7 +109,7 @@ public class Sanduiches extends javax.swing.JFrame {
             }
         });
 
-        comboTam.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pequeno", "Medio", "Grande" }));
+        comboTam.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Pequeno", "Medio", "Grande" }));
 
         comboMolho.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ketchup", "Barbecue", "Maionese", "Rose", "Chipotle" }));
         comboMolho.setToolTipText("");
@@ -164,7 +164,7 @@ public class Sanduiches extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 0, 0));
 
-        jBoxSanduba.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Almondegas", "Calabresa", "Costela", "Nordestina", "Frango" }));
+        jBoxSanduba.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Almondegas", "Calabresa", "Costela", "Nordestina", "Frango", "Beirute", "Doce" }));
         jBoxSanduba.setToolTipText("");
         jBoxSanduba.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -172,7 +172,7 @@ public class Sanduiches extends javax.swing.JFrame {
             }
         });
 
-        jBoxTamanho.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Pequena", "Média", "Grande" }));
+        jBoxTamanho.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Pequeno", "Média", "Grande" }));
         jBoxTamanho.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBoxTamanhoActionPerformed(evt);
