@@ -160,7 +160,7 @@ public class Sanduiches extends javax.swing.JFrame {
         });
 
         jLabel7.setFont(new java.awt.Font("Segoe UI Black", 0, 16)); // NOI18N
-        jLabel7.setText("MONTE SEU SANDUICHE");
+        jLabel7.setText("MONTE SEU COMBO");
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 0, 0));
@@ -263,9 +263,6 @@ public class Sanduiches extends javax.swing.JFrame {
                         .addGap(212, 212, 212)
                         .addComponent(jLabel8))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(191, 191, 191)
-                        .addComponent(jLabel7))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(153, 153, 153)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -285,8 +282,11 @@ public class Sanduiches extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(buttonVerCarrinho)
                         .addGap(18, 18, 18)
-                        .addComponent(buttonFinalizar)))
-                .addContainerGap(112, Short.MAX_VALUE))
+                        .addComponent(buttonFinalizar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(203, 203, 203)
+                        .addComponent(jLabel7)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -380,7 +380,7 @@ public class Sanduiches extends javax.swing.JFrame {
         String acomp = (String)comboAcomp.getSelectedItem();
         
         Sanduiche s = new Sanduiche(pro,tam,pao,sal,mol,acomp);
-        JOptionPane.showMessageDialog(null, "O total ficou R$"+s.calcularPreco()+"0 reais.");
+        JOptionPane.showMessageDialog(null, "Seu Sanduiche de " + s.getSabor() + "(" + s.getTamanho() + ")" + "\nfoi adcionado ao carrinho" + "\nno Valor de R$"+s.calcularPreco()+"0.");
         s.setPreco(s.calcularPreco());
         carrinho.adicionarSanduba(s);
         System.out.println(carrinho);
@@ -394,7 +394,7 @@ public class Sanduiches extends javax.swing.JFrame {
     }   else{
             Sanduba sanduba = new Sanduba(saborsanduba, tamanhosanduba);
             carrinho.adicionarSanduba(sanduba);          
-            JOptionPane.showMessageDialog(null,"sanduiche de " + saborsanduba + " adicionada ao carrinho!");
+            JOptionPane.showMessageDialog(null,"Tradiconal " + saborsanduba + " - R$" + sanduba.getPreco() + "0\n foi adcionado ao carrinho.");
         }  
     }//GEN-LAST:event_buttonAddSanduicheActionPerformed
 
@@ -422,7 +422,7 @@ public class Sanduiches extends javax.swing.JFrame {
                     String sanduichesTexto = "";
 
                     for (Sanduba p : carrinho.getSandubas()) {
-                        sanduichesTexto += "sanduiche de " + p.getSabor() + " - " + p.getTamanho() + " - R$" + p.getPreco() + "0\n";
+                        sanduichesTexto += "Sanduiche de " + p.getSabor() + " - " + p.getTamanho() + " - R$" + p.getPreco() + "0\n foi adcionado ao carrinho.";
                 }
 
                 JOptionPane.showMessageDialog(null, 

@@ -170,14 +170,9 @@ public class Informacoes extends javax.swing.JFrame {
             mtg = new Sanduiches(inputNome.getText(), comboBairro.getSelectedItem(),
                     inputTel.getText(), comboPay.getSelectedItem());
                 mtg.setVisible(true);
+                this.hide();
+                
         }
- //if else não funciona         
-        /*
-        Sanduiches mtg = new Sanduiches(inputNome.getText(), comboBairro.getSelectedItem(),
-        inputTel.getText(), comboPay.getSelectedItem());
-        mtg.setVisible(true);
-        */
-        
         
         
     }//GEN-LAST:event_ButtonSeguinteActionPerformed
