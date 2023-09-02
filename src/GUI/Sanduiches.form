@@ -96,19 +96,25 @@
                           </Group>
                           <Component id="ButtonAddSanduba" min="-2" max="-2" attributes="0"/>
                           <Component id="buttonAddSanduiche" min="-2" max="-2" attributes="0"/>
-                          <Component id="buttonVerCarrinho" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="buttonFinalizar" min="-2" max="-2" attributes="0"/>
                           <Component id="cardapio" min="-2" max="-2" attributes="0"/>
                           <Component id="buttonCombo" min="-2" max="-2" attributes="0"/>
                           <Component id="jBoxTamanho" min="-2" pref="97" max="-2" attributes="0"/>
                           <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="buttonVerCarrinho" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="buttonFinalizar" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="112" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -174,6 +180,7 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="buttonFinalizar" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="buttonVerCarrinho" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
@@ -236,11 +243,10 @@
     <Component class="javax.swing.JComboBox" name="comboTam">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value=""/>
-            <StringItem index="1" value="Pequeno"/>
-            <StringItem index="2" value="Medio"/>
-            <StringItem index="3" value="Grande"/>
+          <StringArray count="3">
+            <StringItem index="0" value="Pequeno"/>
+            <StringItem index="1" value="Medio"/>
+            <StringItem index="2" value="Grande"/>
           </StringArray>
         </Property>
       </Properties>
@@ -364,15 +370,14 @@
     <Component class="javax.swing.JComboBox" name="jBoxSanduba">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="8">
-            <StringItem index="0" value=""/>
-            <StringItem index="1" value="Almondegas"/>
-            <StringItem index="2" value="Calabresa"/>
-            <StringItem index="3" value="Costela"/>
-            <StringItem index="4" value="Nordestina"/>
-            <StringItem index="5" value="Frango"/>
-            <StringItem index="6" value="Beirute"/>
-            <StringItem index="7" value="Doce"/>
+          <StringArray count="7">
+            <StringItem index="0" value="Almondegas"/>
+            <StringItem index="1" value="Calabresa"/>
+            <StringItem index="2" value="Costela"/>
+            <StringItem index="3" value="Nordestina"/>
+            <StringItem index="4" value="Frango"/>
+            <StringItem index="5" value="Beirute"/>
+            <StringItem index="6" value="Doce"/>
           </StringArray>
         </Property>
         <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -387,11 +392,10 @@
     <Component class="javax.swing.JComboBox" name="jBoxTamanho">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value=""/>
-            <StringItem index="1" value="Pequeno"/>
-            <StringItem index="2" value="M&#xe9;dia"/>
-            <StringItem index="3" value="Grande"/>
+          <StringArray count="3">
+            <StringItem index="0" value="Pequeno"/>
+            <StringItem index="1" value="M&#xe9;dio"/>
+            <StringItem index="2" value="Grande"/>
           </StringArray>
         </Property>
       </Properties>
@@ -461,6 +465,14 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonComboActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Limpar Carrinho"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

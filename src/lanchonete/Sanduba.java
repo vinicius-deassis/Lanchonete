@@ -41,11 +41,11 @@ public class Sanduba{
     
     public float calcularPreco(String tamanho){
         switch (tamanho) {
-            case "Pequena":
-                this.preco = 15f;
-                break;
-            case "Média":
+            case "Pequeno":
                 this.preco = 20f;
+                break;
+            case "Médio":
+                this.preco = 25f;
                 break;
             case "Grande":
                 this.preco = 30f;

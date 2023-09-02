@@ -28,152 +28,153 @@ public class Combo extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel58 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
+        try {
+            Crieseucombo =(javax.swing.JLabel)java.beans.Beans.instantiate(getClass().getClassLoader(), "GUI.Combo_jLabel1");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (java.io.IOException e) {
+            e.printStackTrace();
+        }
+        pao = new javax.swing.JLabel();
+        frances = new javax.swing.JLabel();
+        tresqueijos = new javax.swing.JLabel();
+        integral = new javax.swing.JLabel();
+        novegraos = new javax.swing.JLabel();
+        italiano = new javax.swing.JLabel();
+        carne = new javax.swing.JLabel();
+        frango = new javax.swing.JLabel();
+        molhos = new javax.swing.JLabel();
+        proteinas = new javax.swing.JLabel();
+        ponto = new javax.swing.JLabel();
+        ponto2 = new javax.swing.JLabel();
+        ponto1 = new javax.swing.JLabel();
+        ponto4 = new javax.swing.JLabel();
+        ponto3 = new javax.swing.JLabel();
+        ponto6 = new javax.swing.JLabel();
+        ponto5 = new javax.swing.JLabel();
+        preço = new javax.swing.JLabel();
+        preço1 = new javax.swing.JLabel();
+        preço2 = new javax.swing.JLabel();
+        preço4 = new javax.swing.JLabel();
+        preço3 = new javax.swing.JLabel();
+        preço6 = new javax.swing.JLabel();
+        preço5 = new javax.swing.JLabel();
         Fechar01 = new javax.swing.JButton();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
-        jLabel40 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
-        jLabel42 = new javax.swing.JLabel();
-        jLabel43 = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
-        jLabel45 = new javax.swing.JLabel();
-        jLabel46 = new javax.swing.JLabel();
-        jLabel47 = new javax.swing.JLabel();
-        jLabel48 = new javax.swing.JLabel();
-        jLabel49 = new javax.swing.JLabel();
-        jLabel50 = new javax.swing.JLabel();
-        jLabel51 = new javax.swing.JLabel();
-        jLabel52 = new javax.swing.JLabel();
-        jLabel53 = new javax.swing.JLabel();
-        jLabel54 = new javax.swing.JLabel();
-        jLabel55 = new javax.swing.JLabel();
-        jLabel56 = new javax.swing.JLabel();
-        jLabel57 = new javax.swing.JLabel();
-        jLabel59 = new javax.swing.JLabel();
-        jLabel60 = new javax.swing.JLabel();
-        jLabel61 = new javax.swing.JLabel();
-        jLabel62 = new javax.swing.JLabel();
-        jLabel63 = new javax.swing.JLabel();
-        jLabel64 = new javax.swing.JLabel();
-        jLabel65 = new javax.swing.JLabel();
-        jLabel66 = new javax.swing.JLabel();
-        jLabel67 = new javax.swing.JLabel();
-        jLabel68 = new javax.swing.JLabel();
-        jLabel69 = new javax.swing.JLabel();
-        jLabel70 = new javax.swing.JLabel();
-        jLabel71 = new javax.swing.JLabel();
-        jLabel72 = new javax.swing.JLabel();
-        jLabel73 = new javax.swing.JLabel();
-        jLabel74 = new javax.swing.JLabel();
-        jLabel75 = new javax.swing.JLabel();
-        jLabel76 = new javax.swing.JLabel();
-        jLabel77 = new javax.swing.JLabel();
-        jLabel78 = new javax.swing.JLabel();
-        jLabel79 = new javax.swing.JLabel();
-        jLabel80 = new javax.swing.JLabel();
-        jLabel81 = new javax.swing.JLabel();
+        salame = new javax.swing.JLabel();
+        calabresa = new javax.swing.JLabel();
+        almondegas = new javax.swing.JLabel();
+        ponto7 = new javax.swing.JLabel();
+        preço7 = new javax.swing.JLabel();
+        saladas = new javax.swing.JLabel();
+        acompanhamentos = new javax.swing.JLabel();
+        ponto8 = new javax.swing.JLabel();
+        preço8 = new javax.swing.JLabel();
+        preço9 = new javax.swing.JLabel();
+        ponto9 = new javax.swing.JLabel();
+        tomate = new javax.swing.JLabel();
+        pepino = new javax.swing.JLabel();
+        alface = new javax.swing.JLabel();
+        cebola = new javax.swing.JLabel();
+        azeitona = new javax.swing.JLabel();
+        ketchup = new javax.swing.JLabel();
+        barbecue = new javax.swing.JLabel();
+        maionese = new javax.swing.JLabel();
+        rose = new javax.swing.JLabel();
+        chipotle = new javax.swing.JLabel();
+        ponto10 = new javax.swing.JLabel();
+        ponto11 = new javax.swing.JLabel();
+        ponto12 = new javax.swing.JLabel();
+        ponto13 = new javax.swing.JLabel();
+        ponto14 = new javax.swing.JLabel();
+        preço10 = new javax.swing.JLabel();
+        preço11 = new javax.swing.JLabel();
+        preço12 = new javax.swing.JLabel();
+        preço13 = new javax.swing.JLabel();
+        preço14 = new javax.swing.JLabel();
+        ponto16 = new javax.swing.JLabel();
+        preço15 = new javax.swing.JLabel();
+        preço16 = new javax.swing.JLabel();
+        preço17 = new javax.swing.JLabel();
+        preço18 = new javax.swing.JLabel();
+        preço20 = new javax.swing.JLabel();
+        ponto15 = new javax.swing.JLabel();
+        ponto17 = new javax.swing.JLabel();
+        ponto18 = new javax.swing.JLabel();
+        ponto19 = new javax.swing.JLabel();
+        batata = new javax.swing.JLabel();
+        nuggets = new javax.swing.JLabel();
+        ponto20 = new javax.swing.JLabel();
+        ponto21 = new javax.swing.JLabel();
+        preço21 = new javax.swing.JLabel();
+        preço22 = new javax.swing.JLabel();
+        ponto23 = new javax.swing.JLabel();
+        preço23 = new javax.swing.JLabel();
+        preço24 = new javax.swing.JLabel();
+        ponto22 = new javax.swing.JLabel();
+        coca = new javax.swing.JLabel();
+        guarana = new javax.swing.JLabel();
 
         jLabel58.setText("R$ 1.00");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 0, 16)); // NOI18N
-        jLabel1.setText("CRIE SEU COMBO");
+        pao.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        pao.setForeground(new java.awt.Color(255, 0, 0));
+        pao.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        pao.setText("1. PÃO");
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("1. PÃO");
+        frances.setText("Francês");
 
-        jLabel3.setText("Francês");
+        tresqueijos.setText("Três Queijos");
 
-        jLabel4.setText("Três Queijos");
+        integral.setText("Integral");
 
-        jLabel5.setText("Integral");
+        novegraos.setText("Nove Grãos");
 
-        jLabel6.setText("Nove Grãos");
+        italiano.setText("Italiano c/ Queijo");
 
-        jLabel7.setText("Italiano c/ Queijo");
+        carne.setText("Carne");
 
-        jLabel8.setText("Carne");
+        frango.setText("Frango");
 
-        jLabel9.setText("Frango");
+        molhos.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        molhos.setForeground(new java.awt.Color(255, 0, 0));
+        molhos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        molhos.setText("MOLHOS");
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("MOLHOS");
+        proteinas.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        proteinas.setForeground(new java.awt.Color(255, 0, 0));
+        proteinas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        proteinas.setText("2. PROTEINAS");
 
-        jLabel13.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setText("2. PROTEINAS");
+        ponto.setText("...............................................................");
 
-        jLabel14.setText("...............................................................");
+        ponto2.setText("...............................................................");
 
-        jLabel15.setText("...............................................................");
+        ponto1.setText(".......................................................");
 
-        jLabel16.setText(".......................................................");
+        ponto4.setText("............................................");
 
-        jLabel17.setText("............................................");
+        ponto3.setText("........................................................");
 
-        jLabel18.setText("........................................................");
+        ponto6.setText("................................................................");
 
-        jLabel19.setText("................................................................");
+        ponto5.setText("................................................................");
 
-        jLabel20.setText("................................................................");
+        preço.setText("R$ 1.00");
 
-        jLabel21.setText("R$ 1.00");
+        preço1.setText("R$ 2.00");
 
-        jLabel22.setText("R$ 2.00");
+        preço2.setText("R$ 1.50");
 
-        jLabel23.setText("R$ 1.50");
+        preço4.setText("R$ 2.00");
 
-        jLabel24.setText("R$ 2.00");
+        preço3.setText("R$ 2.00");
 
-        jLabel25.setText("R$ 2.00");
+        preço6.setText("R$ 7.00");
 
-        jLabel26.setText("R$ 7.00");
-
-        jLabel27.setText("R$ 5.00");
+        preço5.setText("R$ 5.00");
 
         Fechar01.setText("OK");
         Fechar01.addActionListener(new java.awt.event.ActionListener() {
@@ -182,467 +183,449 @@ public class Combo extends javax.swing.JFrame {
             }
         });
 
-        jLabel28.setText("Salame");
+        salame.setText("Salame");
 
-        jLabel29.setText("Calabresa");
+        calabresa.setText("Calabresa");
 
-        jLabel30.setText("Almondegas");
+        almondegas.setText("Almondegas");
 
-        jLabel31.setText("................................................................");
+        ponto7.setText("................................................................");
 
-        jLabel32.setText("R$ 8.00");
+        preço7.setText("R$ 8.00");
 
-        jLabel33.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
-        jLabel33.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel33.setText("3. SALADAS");
+        saladas.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        saladas.setForeground(new java.awt.Color(255, 0, 0));
+        saladas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        saladas.setText("3. SALADAS");
 
-        jLabel34.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
-        jLabel34.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel34.setText("ACOMPANHAMENTOS");
+        acompanhamentos.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        acompanhamentos.setForeground(new java.awt.Color(255, 0, 0));
+        acompanhamentos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        acompanhamentos.setText("ACOMPANHAMENTOS");
 
-        jLabel35.setText("............................................................");
+        ponto8.setText("............................................................");
 
-        jLabel36.setText("R$ 7.00");
+        preço8.setText("R$ 7.00");
 
-        jLabel37.setText("R$ 10.00");
+        preço9.setText("R$ 10.00");
 
-        jLabel38.setText(".......................................................");
+        ponto9.setText(".......................................................");
 
-        jLabel39.setText("Tomate");
+        tomate.setText("Tomate");
 
-        jLabel40.setText("Pepino");
+        pepino.setText("Pepino");
 
-        jLabel41.setText("Alface");
+        alface.setText("Alface");
 
-        jLabel42.setText("Cebola Roxa");
+        cebola.setText("Cebola Roxa");
 
-        jLabel43.setText("Azeitona");
+        azeitona.setText("Azeitona");
 
-        jLabel44.setText("Ketchup");
+        ketchup.setText("Ketchup");
 
-        jLabel45.setText("Barbecue");
+        barbecue.setText("Barbecue");
 
-        jLabel46.setText("Maionese");
+        maionese.setText("Maionese");
 
-        jLabel47.setText("Rose");
+        rose.setText("Rose");
 
-        jLabel48.setText("Chipotle");
+        chipotle.setText("Chipotle");
 
-        jLabel49.setText(".................");
+        ponto10.setText(".................");
 
-        jLabel50.setText("..................");
+        ponto11.setText("..................");
 
-        jLabel51.setText("...................");
+        ponto12.setText("...................");
 
-        jLabel52.setText("........");
+        ponto13.setText("........");
 
-        jLabel53.setText("...............");
+        ponto14.setText("...............");
 
-        jLabel54.setText("R$ 1.00");
+        preço10.setText("R$ 1.00");
 
-        jLabel55.setText("R$ 2.00");
+        preço11.setText("R$ 2.00");
 
-        jLabel56.setText("R$ 2.50");
+        preço12.setText("R$ 2.50");
 
-        jLabel57.setText("R$ 2.00");
+        preço13.setText("R$ 2.00");
 
-        jLabel59.setText("R$ 1.00");
+        preço14.setText("R$ 1.00");
 
-        jLabel60.setText("................");
+        ponto16.setText("................");
 
-        jLabel61.setText("R$ 1.00");
+        preço15.setText("R$ 1.00");
 
-        jLabel62.setText("R$ 2.00");
+        preço16.setText("R$ 2.00");
 
-        jLabel63.setText("R$ 1.00");
+        preço17.setText("R$ 1.00");
 
-        jLabel64.setText("R$ 2.00");
+        preço18.setText("R$ 2.00");
 
-        jLabel65.setText("R$ 3.00");
+        preço20.setText("R$ 3.00");
 
-        jLabel66.setText(".................");
+        ponto15.setText(".................");
 
-        jLabel67.setText("...............");
+        ponto17.setText("...............");
 
-        jLabel68.setText("........................");
+        ponto18.setText("........................");
 
-        jLabel69.setText("..................");
+        ponto19.setText("..................");
 
-        jLabel70.setText("Batata Frita");
+        batata.setText("Batata Frita");
 
-        jLabel71.setText("Nuggets");
+        nuggets.setText("Nuggets");
 
-        jLabel72.setText("............");
+        ponto20.setText("............");
 
-        jLabel73.setText("................");
+        ponto21.setText("................");
 
-        jLabel74.setText("R$ 5.00");
+        preço21.setText("R$ 5.00");
 
-        jLabel75.setText("R$ 8.00");
+        preço22.setText("R$ 8.00");
 
-        jLabel76.setText("..................");
+        ponto23.setText("..................");
 
-        jLabel77.setText("R$ 6.00");
+        preço23.setText("R$ 6.00");
 
-        jLabel78.setText("R$ 8.00");
+        preço24.setText("R$ 8.00");
 
-        jLabel79.setText(".............");
+        ponto22.setText(".............");
 
-        jLabel80.setText("Coca-Cola");
+        coca.setText("Coca-Cola");
 
-        jLabel81.setText("Guaraná");
+        guarana.setText("Guaraná");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addContainerGap(73, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel34)
+                    .addComponent(acompanhamentos)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel33)
+                            .addComponent(saladas)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel43)
+                                .addComponent(azeitona)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel53)
+                                .addComponent(ponto14)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel59))
+                                .addComponent(preço14))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel41)
+                                .addComponent(alface)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel51)
+                                .addComponent(ponto12)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel56))
+                                .addComponent(preço12))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel40)
+                                .addComponent(pepino)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel50)
+                                .addComponent(ponto11)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel55))
+                                .addComponent(preço11))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel42)
+                                .addComponent(cebola)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel52)
+                                .addComponent(ponto13)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel57))
+                                .addComponent(preço13))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel39)
+                                .addComponent(tomate)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel49)
+                                .addComponent(ponto10)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel54)))
+                                .addComponent(preço10)))
                         .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel10)
+                            .addComponent(molhos)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel48)
+                                        .addComponent(chipotle)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel69))
+                                        .addComponent(ponto19))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel47)
+                                        .addComponent(rose)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel68))
+                                        .addComponent(ponto18))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel46)
+                                        .addComponent(maionese)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel67))
+                                        .addComponent(ponto17))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel45)
+                                        .addComponent(barbecue)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel60))
+                                        .addComponent(ponto16))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel44)
+                                        .addComponent(ketchup)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel66)))
+                                        .addComponent(ponto15)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel63)
-                                    .addComponent(jLabel64)
+                                    .addComponent(preço17)
+                                    .addComponent(preço18)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(1, 1, 1)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel65)
-                                            .addComponent(jLabel62)
-                                            .addComponent(jLabel61)))))))
+                                            .addComponent(preço20)
+                                            .addComponent(preço16)
+                                            .addComponent(preço15)))))))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel30)
+                        .addComponent(almondegas)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(ponto9, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel29)
+                        .addComponent(calabresa)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(ponto8, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel8)
-                                    .addComponent(jLabel9))
+                                    .addComponent(carne)
+                                    .addComponent(frango))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel20)
-                                    .addComponent(jLabel19)))
+                                    .addComponent(ponto5)
+                                    .addComponent(ponto6)))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jLabel28)
+                                .addComponent(salame)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel31)))
+                                .addComponent(ponto7)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel27)
-                            .addComponent(jLabel26)
-                            .addComponent(jLabel32)
-                            .addComponent(jLabel36)
-                            .addComponent(jLabel37)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel81)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel73)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel75))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel80)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel72)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel74)))
-                        .addGap(28, 28, 28)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel71)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel76))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel70)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel79)))
-                        .addGap(javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel78)
-                            .addComponent(jLabel77)))
-                    .addComponent(jLabel13)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(119, 119, 119)
-                        .addComponent(Fechar01))
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1)
+                            .addComponent(preço5)
+                            .addComponent(preço6)
+                            .addComponent(preço7)
+                            .addComponent(preço8)
+                            .addComponent(preço9)))
+                    .addComponent(proteinas)
+                    .addComponent(pao)
+                    .addComponent(Crieseucombo)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(104, 104, 104)
-                                .addComponent(jLabel17))
+                                .addComponent(ponto4))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel6)
+                                .addComponent(novegraos)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(ponto3, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel5)
+                                .addComponent(integral)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(ponto2, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
+                                .addComponent(tresqueijos)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(ponto1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
+                                .addComponent(frances)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel14))
-                            .addComponent(jLabel7))
+                                .addComponent(ponto))
+                            .addComponent(italiano))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel24)
-                            .addComponent(jLabel25)
-                            .addComponent(jLabel23)
-                            .addComponent(jLabel21)
-                            .addComponent(jLabel22))))
-                .addGap(107, 107, 107))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(358, Short.MAX_VALUE)
-                    .addComponent(jLabel12)
-                    .addGap(96, 96, 96)))
+                            .addComponent(preço4)
+                            .addComponent(preço3)
+                            .addComponent(preço2)
+                            .addComponent(preço)
+                            .addComponent(preço1)))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(Fechar01)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(guarana)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(ponto21)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(preço22))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(coca)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(ponto20)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(preço21)))
+                            .addGap(28, 28, 28)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(nuggets)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(ponto23))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(batata)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(ponto22)))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(preço24)
+                                .addComponent(preço23)))))
+                .addGap(64, 64, 64))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(83, 83, 83)
-                        .addComponent(jLabel11))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel2)
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel3)
-                                        .addComponent(jLabel14))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel4)
-                                        .addComponent(jLabel16))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel5)
-                                        .addComponent(jLabel15))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel6)
-                                        .addComponent(jLabel18))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel7))
-                                .addComponent(jLabel17))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel22)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel25)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel24)))))
+                .addGap(17, 17, 17)
+                .addComponent(Crieseucombo)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel13)
+                .addComponent(pao)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(frances)
+                                .addComponent(ponto))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(tresqueijos)
+                                .addComponent(ponto1))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(integral)
+                                .addComponent(ponto2))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(novegraos)
+                                .addComponent(ponto3))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(italiano))
+                        .addComponent(ponto4))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(preço)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(preço1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(preço2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(preço3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(preço4)))
+                .addGap(18, 18, 18)
+                .addComponent(proteinas)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel20))
+                            .addComponent(carne)
+                            .addComponent(ponto5))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel19)))
+                            .addComponent(frango)
+                            .addComponent(ponto6)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel26)
+                        .addComponent(preço6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel27)))
+                        .addComponent(preço5)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel28)
-                    .addComponent(jLabel31)
-                    .addComponent(jLabel32))
+                    .addComponent(salame)
+                    .addComponent(ponto7)
+                    .addComponent(preço7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel29)
-                    .addComponent(jLabel35)
-                    .addComponent(jLabel36))
+                    .addComponent(calabresa)
+                    .addComponent(ponto8)
+                    .addComponent(preço8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel30)
-                    .addComponent(jLabel38)
-                    .addComponent(jLabel37))
+                    .addComponent(almondegas)
+                    .addComponent(ponto9)
+                    .addComponent(preço9))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel33)
-                    .addComponent(jLabel10))
+                    .addComponent(saladas)
+                    .addComponent(molhos))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel39)
-                                .addComponent(jLabel49)
-                                .addComponent(jLabel54))
+                                .addComponent(tomate)
+                                .addComponent(ponto10)
+                                .addComponent(preço10))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel40)
-                                .addComponent(jLabel50)
-                                .addComponent(jLabel55))
+                                .addComponent(pepino)
+                                .addComponent(ponto11)
+                                .addComponent(preço11))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel41)
-                                .addComponent(jLabel51)
-                                .addComponent(jLabel56))
+                                .addComponent(alface)
+                                .addComponent(ponto12)
+                                .addComponent(preço12))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel42)
-                                .addComponent(jLabel52)
-                                .addComponent(jLabel57))
+                                .addComponent(cebola)
+                                .addComponent(ponto13)
+                                .addComponent(preço13))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel43)
-                                .addComponent(jLabel53)
-                                .addComponent(jLabel59)))
+                                .addComponent(azeitona)
+                                .addComponent(ponto14)
+                                .addComponent(preço14)))
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel44)
-                                .addComponent(jLabel66))
+                                .addComponent(ketchup)
+                                .addComponent(ponto15))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel45)
-                                .addComponent(jLabel60))
+                                .addComponent(barbecue)
+                                .addComponent(ponto16))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel46)
-                                .addComponent(jLabel67))
+                                .addComponent(maionese)
+                                .addComponent(ponto17))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel47)
-                                .addComponent(jLabel68))
+                                .addComponent(rose)
+                                .addComponent(ponto18))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel48)
-                                .addComponent(jLabel69))))
+                                .addComponent(chipotle)
+                                .addComponent(ponto19))))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel61)
+                        .addComponent(preço15)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel62)
+                        .addComponent(preço16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel63)
+                        .addComponent(preço17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel64)
+                        .addComponent(preço18)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel65)))
+                        .addComponent(preço20)))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel34)
+                .addComponent(acompanhamentos)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel80)
-                                .addComponent(jLabel72)
-                                .addComponent(jLabel74))
+                                .addComponent(coca)
+                                .addComponent(ponto20)
+                                .addComponent(preço21))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel81)
-                                .addComponent(jLabel73)
-                                .addComponent(jLabel75)))
+                                .addComponent(guarana)
+                                .addComponent(ponto21)
+                                .addComponent(preço22)))
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel70)
-                                .addComponent(jLabel79))
+                                .addComponent(batata)
+                                .addComponent(ponto22))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel71)
-                                .addComponent(jLabel76))))
+                                .addComponent(nuggets)
+                                .addComponent(ponto23))))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel77)
+                        .addComponent(preço23)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel78)))
+                        .addComponent(preço24)))
                 .addGap(18, 18, 18)
                 .addComponent(Fechar01)
                 .addContainerGap(16, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(86, 86, 86)
-                    .addComponent(jLabel12)
-                    .addContainerGap(575, Short.MAX_VALUE)))
         );
 
         pack();
@@ -704,87 +687,85 @@ public class Combo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Crieseucombo;
     private javax.swing.JButton Fechar01;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
-    private javax.swing.JLabel jLabel45;
-    private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel53;
-    private javax.swing.JLabel jLabel54;
-    private javax.swing.JLabel jLabel55;
-    private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel acompanhamentos;
+    private javax.swing.JLabel alface;
+    private javax.swing.JLabel almondegas;
+    private javax.swing.JLabel azeitona;
+    private javax.swing.JLabel barbecue;
+    private javax.swing.JLabel batata;
+    private javax.swing.JLabel calabresa;
+    private javax.swing.JLabel carne;
+    private javax.swing.JLabel cebola;
+    private javax.swing.JLabel chipotle;
+    private javax.swing.JLabel coca;
+    private javax.swing.JLabel frances;
+    private javax.swing.JLabel frango;
+    private javax.swing.JLabel guarana;
+    private javax.swing.JLabel integral;
+    private javax.swing.JLabel italiano;
     private javax.swing.JLabel jLabel58;
-    private javax.swing.JLabel jLabel59;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel60;
-    private javax.swing.JLabel jLabel61;
-    private javax.swing.JLabel jLabel62;
-    private javax.swing.JLabel jLabel63;
-    private javax.swing.JLabel jLabel64;
-    private javax.swing.JLabel jLabel65;
-    private javax.swing.JLabel jLabel66;
-    private javax.swing.JLabel jLabel67;
-    private javax.swing.JLabel jLabel68;
-    private javax.swing.JLabel jLabel69;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel70;
-    private javax.swing.JLabel jLabel71;
-    private javax.swing.JLabel jLabel72;
-    private javax.swing.JLabel jLabel73;
-    private javax.swing.JLabel jLabel74;
-    private javax.swing.JLabel jLabel75;
-    private javax.swing.JLabel jLabel76;
-    private javax.swing.JLabel jLabel77;
-    private javax.swing.JLabel jLabel78;
-    private javax.swing.JLabel jLabel79;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel80;
-    private javax.swing.JLabel jLabel81;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel ketchup;
+    private javax.swing.JLabel maionese;
+    private javax.swing.JLabel molhos;
+    private javax.swing.JLabel novegraos;
+    private javax.swing.JLabel nuggets;
+    private javax.swing.JLabel pao;
+    private javax.swing.JLabel pepino;
+    private javax.swing.JLabel ponto;
+    private javax.swing.JLabel ponto1;
+    private javax.swing.JLabel ponto10;
+    private javax.swing.JLabel ponto11;
+    private javax.swing.JLabel ponto12;
+    private javax.swing.JLabel ponto13;
+    private javax.swing.JLabel ponto14;
+    private javax.swing.JLabel ponto15;
+    private javax.swing.JLabel ponto16;
+    private javax.swing.JLabel ponto17;
+    private javax.swing.JLabel ponto18;
+    private javax.swing.JLabel ponto19;
+    private javax.swing.JLabel ponto2;
+    private javax.swing.JLabel ponto20;
+    private javax.swing.JLabel ponto21;
+    private javax.swing.JLabel ponto22;
+    private javax.swing.JLabel ponto23;
+    private javax.swing.JLabel ponto3;
+    private javax.swing.JLabel ponto4;
+    private javax.swing.JLabel ponto5;
+    private javax.swing.JLabel ponto6;
+    private javax.swing.JLabel ponto7;
+    private javax.swing.JLabel ponto8;
+    private javax.swing.JLabel ponto9;
+    private javax.swing.JLabel preço;
+    private javax.swing.JLabel preço1;
+    private javax.swing.JLabel preço10;
+    private javax.swing.JLabel preço11;
+    private javax.swing.JLabel preço12;
+    private javax.swing.JLabel preço13;
+    private javax.swing.JLabel preço14;
+    private javax.swing.JLabel preço15;
+    private javax.swing.JLabel preço16;
+    private javax.swing.JLabel preço17;
+    private javax.swing.JLabel preço18;
+    private javax.swing.JLabel preço2;
+    private javax.swing.JLabel preço20;
+    private javax.swing.JLabel preço21;
+    private javax.swing.JLabel preço22;
+    private javax.swing.JLabel preço23;
+    private javax.swing.JLabel preço24;
+    private javax.swing.JLabel preço3;
+    private javax.swing.JLabel preço4;
+    private javax.swing.JLabel preço5;
+    private javax.swing.JLabel preço6;
+    private javax.swing.JLabel preço7;
+    private javax.swing.JLabel preço8;
+    private javax.swing.JLabel preço9;
+    private javax.swing.JLabel proteinas;
+    private javax.swing.JLabel rose;
+    private javax.swing.JLabel saladas;
+    private javax.swing.JLabel salame;
+    private javax.swing.JLabel tomate;
+    private javax.swing.JLabel tresqueijos;
     // End of variables declaration//GEN-END:variables
 }

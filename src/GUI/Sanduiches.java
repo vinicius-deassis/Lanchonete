@@ -70,6 +70,7 @@ public class Sanduiches extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         cardapio = new javax.swing.JButton();
         buttonCombo = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -109,7 +110,7 @@ public class Sanduiches extends javax.swing.JFrame {
             }
         });
 
-        comboTam.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Pequeno", "Medio", "Grande" }));
+        comboTam.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pequeno", "Medio", "Grande" }));
 
         comboMolho.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ketchup", "Barbecue", "Maionese", "Rose", "Chipotle" }));
         comboMolho.setToolTipText("");
@@ -164,7 +165,7 @@ public class Sanduiches extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 0, 0));
 
-        jBoxSanduba.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Almondegas", "Calabresa", "Costela", "Nordestina", "Frango", "Beirute", "Doce" }));
+        jBoxSanduba.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Almondegas", "Calabresa", "Costela", "Nordestina", "Frango", "Beirute", "Doce" }));
         jBoxSanduba.setToolTipText("");
         jBoxSanduba.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -172,7 +173,7 @@ public class Sanduiches extends javax.swing.JFrame {
             }
         });
 
-        jBoxTamanho.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Pequeno", "Média", "Grande" }));
+        jBoxTamanho.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pequeno", "Médio", "Grande" }));
         jBoxTamanho.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBoxTamanhoActionPerformed(evt);
@@ -221,6 +222,13 @@ public class Sanduiches extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("Limpar Carrinho");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -264,16 +272,21 @@ public class Sanduiches extends javax.swing.JFrame {
                                 .addComponent(jLabel12)
                                 .addComponent(jBoxSanduba, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(ButtonAddSanduba)
-                            .addComponent(buttonAddSanduiche)
-                            .addComponent(buttonVerCarrinho))
+                            .addComponent(buttonAddSanduiche))
                         .addGap(34, 34, 34)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(buttonFinalizar)
                             .addComponent(cardapio)
                             .addComponent(buttonCombo)
                             .addComponent(jBoxTamanho, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel9))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jLabel9)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(104, 104, 104)
+                        .addComponent(jButton1)
+                        .addGap(18, 18, 18)
+                        .addComponent(buttonVerCarrinho)
+                        .addGap(18, 18, 18)
+                        .addComponent(buttonFinalizar)))
+                .addContainerGap(112, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -329,7 +342,8 @@ public class Sanduiches extends javax.swing.JFrame {
                         .addGap(71, 71, 71)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(buttonFinalizar)
-                            .addComponent(buttonVerCarrinho)))
+                            .addComponent(buttonVerCarrinho)
+                            .addComponent(jButton1)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel12)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -443,11 +457,19 @@ public class Sanduiches extends javax.swing.JFrame {
     }//GEN-LAST:event_cardapioActionPerformed
 
     private void buttonComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonComboActionPerformed
-        //Combo a = new Combo();
-        //a.setVisible(true);
+        Combo a = new Combo();
+        a.setVisible(true);
         
-        JOptionPane.showMessageDialog(null, p.showItens());
+        //JOptionPane.showMessageDialog(null, p.showItens());
     }//GEN-LAST:event_buttonComboActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        carrinho.getSandubas().clear();
+        JOptionPane.showMessageDialog(null, "Todos os itens removidos do carrinho!");
+        
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -496,6 +518,7 @@ public class Sanduiches extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> comboTam;
     private javax.swing.JComboBox<String> jBoxSanduba;
     private javax.swing.JComboBox<String> jBoxTamanho;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonVerCarrinho;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
