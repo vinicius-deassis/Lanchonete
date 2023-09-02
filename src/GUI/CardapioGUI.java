@@ -53,7 +53,6 @@ public class CardapioGUI extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
-        jButtonVoltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -103,26 +102,19 @@ public class CardapioGUI extends javax.swing.JFrame {
 
         jLabel20.setText("P/M/G");
 
-        jLabel21.setText("R$ 25/40/60");
+        jLabel21.setText("R$ 20/40/60");
 
-        jLabel22.setText("R$ 25/40/60");
+        jLabel22.setText("R$ 20/40/60");
 
-        jLabel23.setText("R$ 25/40/60");
+        jLabel23.setText("R$ 20/40/60");
 
-        jLabel24.setText("R$ 25/40/60");
+        jLabel24.setText("R$ 20/40/60");
 
-        jLabel25.setText("R$ 25/40/60");
+        jLabel25.setText("R$ 20/40/60");
 
-        jLabel26.setText("R$ 25/40/60");
+        jLabel26.setText("R$ 20/40/60");
 
-        jLabel27.setText("R$ 25/40/60");
-
-        jButtonVoltar.setText("Voltar");
-        jButtonVoltar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonVoltarActionPerformed(evt);
-            }
-        });
+        jLabel27.setText("R$ 20/40/60");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -136,8 +128,7 @@ public class CardapioGUI extends javax.swing.JFrame {
                         .addGap(55, 55, 55)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel13)
-                            .addComponent(jLabel1)
-                            .addComponent(jButtonVoltar))
+                            .addComponent(jLabel1))
                         .addContainerGap(176, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -237,9 +228,7 @@ public class CardapioGUI extends javax.swing.JFrame {
                         .addComponent(jLabel20)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel19)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
-                .addComponent(jButtonVoltar)
-                .addGap(15, 15, 15))
+                .addContainerGap(63, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(86, 86, 86)
@@ -249,13 +238,6 @@ public class CardapioGUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButtonVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVoltarActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-        AddSandubaGUI Sanduiche = new AddSandubaGUI();
-        Sanduiche.setVisible(true);
-    }//GEN-LAST:event_jButtonVoltarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -294,7 +276,6 @@ public class CardapioGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonVoltar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package GUI;
+import javax.swing.JOptionPane;
 import lanchonete.Cliente;
 /**
  *
@@ -31,11 +32,10 @@ public class Informacoes extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         inputNome = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        ButtonMontar = new javax.swing.JButton();
+        ButtonSeguinte = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         inputTel = new javax.swing.JTextField();
-        buttonCardapio = new javax.swing.JButton();
         comboPay = new javax.swing.JComboBox<>();
         comboBairro = new javax.swing.JComboBox<>();
 
@@ -53,10 +53,10 @@ public class Informacoes extends javax.swing.JFrame {
 
         jLabel3.setText("Bairro:");
 
-        ButtonMontar.setText("Montar");
-        ButtonMontar.addActionListener(new java.awt.event.ActionListener() {
+        ButtonSeguinte.setText("Seguinte");
+        ButtonSeguinte.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonMontarActionPerformed(evt);
+                ButtonSeguinteActionPerformed(evt);
             }
         });
 
@@ -67,13 +67,6 @@ public class Informacoes extends javax.swing.JFrame {
         inputTel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 inputTelActionPerformed(evt);
-            }
-        });
-
-        buttonCardapio.setText("Cardápio");
-        buttonCardapio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonCardapioActionPerformed(evt);
             }
         });
 
@@ -121,10 +114,8 @@ public class Informacoes extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(89, 89, 89))
             .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(buttonCardapio)
-                .addGap(27, 27, 27)
-                .addComponent(ButtonMontar, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(135, 135, 135)
+                .addComponent(ButtonSeguinte, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -149,9 +140,7 @@ public class Informacoes extends javax.swing.JFrame {
                     .addComponent(jLabel4)
                     .addComponent(comboPay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ButtonMontar)
-                    .addComponent(buttonCardapio))
+                .addComponent(ButtonSeguinte)
                 .addGap(20, 20, 20))
         );
 
@@ -162,34 +151,40 @@ public class Informacoes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_inputNomeActionPerformed
 
-    private void ButtonMontarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonMontarActionPerformed
+    private void ButtonSeguinteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSeguinteActionPerformed
         String nome = inputNome.getText();
         Object endereco = comboBairro.getSelectedItem();
         String tel = inputTel.getText();
         Object pag = comboPay.getSelectedItem();
         
         Cliente c = new Cliente(nome,tel,endereco,pag);
-
         
+        if (nome != null && tel != null){
+
+            JOptionPane.showMessageDialog(null,"Cadastro criado!");
+            Sanduiches mtg;
+            mtg = new Sanduiches(inputNome.getText(), comboBairro.getSelectedItem(),
+                    inputTel.getText(), comboPay.getSelectedItem());
+                mtg.setVisible(true);
+              }
+        
+        else {
+            JOptionPane.showMessageDialog(null, "Por favor preencha todos os dados cadastrais");
+        }
+ //if else não funciona         
+        /*
         Sanduiches mtg = new Sanduiches(inputNome.getText(), comboBairro.getSelectedItem(),
         inputTel.getText(), comboPay.getSelectedItem());
         mtg.setVisible(true);
+        */
         
         
         
-        
-    }//GEN-LAST:event_ButtonMontarActionPerformed
+    }//GEN-LAST:event_ButtonSeguinteActionPerformed
 
     private void inputTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputTelActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_inputTelActionPerformed
-
-    private void buttonCardapioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCardapioActionPerformed
-        CardapioGUI c =  new CardapioGUI();
-        c.setVisible(true);
-        this.dispose();
-        
-    }//GEN-LAST:event_buttonCardapioActionPerformed
 
     private void comboPayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboPayActionPerformed
         // TODO add your handling code here:
@@ -238,8 +233,7 @@ public class Informacoes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ButtonMontar;
-    private javax.swing.JButton buttonCardapio;
+    private javax.swing.JButton ButtonSeguinte;
     private javax.swing.JComboBox<String> comboBairro;
     public javax.swing.JComboBox<String> comboPay;
     private javax.swing.JTextField inputNome;
