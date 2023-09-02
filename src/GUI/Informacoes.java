@@ -153,23 +153,23 @@ public class Informacoes extends javax.swing.JFrame {
 
     private void ButtonSeguinteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSeguinteActionPerformed
         String nome = inputNome.getText();
+        System.out.println(nome);
         Object endereco = comboBairro.getSelectedItem();
         String tel = inputTel.getText();
         Object pag = comboPay.getSelectedItem();
         
         Cliente c = new Cliente(nome,tel,endereco,pag);
         
-        if (nome != null && tel != null){
-
+        if (nome.isBlank() || tel.isBlank()){
+            JOptionPane.showMessageDialog(null, "Por favor preencha todos os dados cadastrais");           
+              }
+        
+        else {
             JOptionPane.showMessageDialog(null,"Cadastro criado!");
             Sanduiches mtg;
             mtg = new Sanduiches(inputNome.getText(), comboBairro.getSelectedItem(),
                     inputTel.getText(), comboPay.getSelectedItem());
                 mtg.setVisible(true);
-              }
-        
-        else {
-            JOptionPane.showMessageDialog(null, "Por favor preencha todos os dados cadastrais");
         }
  //if else não funciona         
         /*

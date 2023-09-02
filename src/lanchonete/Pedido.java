@@ -97,4 +97,28 @@ public class Pedido {
     public ArrayList<Item> getPaes(){
         return paes;   
     }
+    public String showItens(){
+        String all = "";
+        all+= "PROTEINAS:\n";
+        for(Item i:proteinas){
+            all+= i.getDesc()+" = "+i.getPreco()+"\n";
+        }
+        all+= "SALADAS:\n";
+        for(Item i:saladas){
+            all+= i.getDesc()+" = "+i.getPreco()+"\n";
+        }
+        all+= "MOLHOS:\n";
+        for(Item i:molhos){
+            all+= i.getDesc()+" = "+i.getPreco()+"\n";
+        }
+        all+= "ACOMPANHAMENTOS:\n";
+        for(Item i:acomps){
+            all+= i.getDesc()+" = "+i.getPreco()+"\n";
+        }
+        all+= "PAES:\n";
+        for(Item i:paes){
+            all+= i.getDesc()+" = "+i.getPreco()+"\n";
+        }
+        return all;
+    }
 }

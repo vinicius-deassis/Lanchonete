@@ -54,10 +54,6 @@ public class Sanduiche{
         return preco;
     }
 
-    public void setPreco(){
-        this.preco = preco;
-    }
-
     @Override
     public String toString(){
         return " " + getSabor() + "(" + getTamanho() + " - " + getPreco() + ")\n";

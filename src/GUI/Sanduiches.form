@@ -89,10 +89,6 @@
                       <Component id="buttonAddSanduiche" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="107" pref="107" max="-2" attributes="0"/>
-                      <Component id="ButtonAddSanduba" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="212" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
@@ -120,6 +116,12 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="buttonFinalizar" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
+                      <Component id="ButtonAddSanduba" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="buttonCardapioSanduba" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -166,9 +168,12 @@
                       <Component id="comboTam" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-              <Component id="ButtonAddSanduba" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ButtonAddSanduba" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="buttonCardapioSanduba" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
               <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -205,13 +210,14 @@
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="5">
-            <StringItem index="0" value="Carne - R$7.00"/>
-            <StringItem index="1" value="Frango - R$5.00"/>
-            <StringItem index="2" value="Salame - R$8.00"/>
-            <StringItem index="3" value="Almondegas - R$10.00"/>
-            <StringItem index="4" value="Calabresa - R$7.00"/>
+            <StringItem index="0" value="Carne"/>
+            <StringItem index="1" value="Frango"/>
+            <StringItem index="2" value="Salame"/>
+            <StringItem index="3" value="Calabresa"/>
+            <StringItem index="4" value="Almondegas"/>
           </StringArray>
         </Property>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboProActionPerformed"/>
@@ -228,12 +234,15 @@
     <Component class="javax.swing.JComboBox" name="comboSalada">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="Tomate - R$1.00"/>
-            <StringItem index="1" value="Alface - R$2.50"/>
-            <StringItem index="2" value="Pepino - R$2.00"/>
+          <StringArray count="5">
+            <StringItem index="0" value="Tomate"/>
+            <StringItem index="1" value="Alface"/>
+            <StringItem index="2" value="Pepino"/>
+            <StringItem index="3" value="Cebola Roxa"/>
+            <StringItem index="4" value="Azeitona"/>
           </StringArray>
         </Property>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboSaladaActionPerformed"/>
@@ -259,12 +268,15 @@
     <Component class="javax.swing.JComboBox" name="comboMolho">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="Ketchup - R$1.00"/>
-            <StringItem index="1" value="Barbecue - R$2.00"/>
-            <StringItem index="2" value="Maionese - R$1.00"/>
+          <StringArray count="5">
+            <StringItem index="0" value="Ketchup"/>
+            <StringItem index="1" value="Barbecue"/>
+            <StringItem index="2" value="Maionese"/>
+            <StringItem index="3" value="Rose"/>
+            <StringItem index="4" value="Chipotle"/>
           </StringArray>
         </Property>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboMolhoActionPerformed"/>
@@ -276,10 +288,12 @@
     <Component class="javax.swing.JComboBox" name="comboAcomp">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="Batata - R$6.00"/>
-            <StringItem index="1" value="Coca - R$5.00"/>
-            <StringItem index="2" value="Nuggets - R$8.00"/>
+          <StringArray count="5">
+            <StringItem index="0" value="Batata"/>
+            <StringItem index="1" value="Coca"/>
+            <StringItem index="2" value="Nuggets"/>
+            <StringItem index="3" value="Guarana"/>
+            <StringItem index="4" value="Nada"/>
           </StringArray>
         </Property>
       </Properties>
@@ -320,12 +334,15 @@
     <Component class="javax.swing.JComboBox" name="comboPao">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="Frances - R$1.00"/>
-            <StringItem index="1" value="3 queijos - R$2.00"/>
-            <StringItem index="2" value="Integral - R$1.50"/>
+          <StringArray count="5">
+            <StringItem index="0" value="Frances"/>
+            <StringItem index="1" value="3 queijos"/>
+            <StringItem index="2" value="Integral"/>
+            <StringItem index="3" value="9 graos"/>
+            <StringItem index="4" value="Italiano com Queijo"/>
           </StringArray>
         </Property>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
       <Events>
         <EventHandler event="componentAdded" listener="java.awt.event.ContainerListener" parameters="java.awt.event.ContainerEvent" handler="comboPaoComponentAdded"/>
@@ -450,6 +467,14 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cardapioActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="buttonCardapioSanduba">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cardapio"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonCardapioSandubaActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

@@ -21,10 +21,13 @@ public class Sanduba extends Sanduiche{
         this.pao = pao;
         this.salada = salada;
         this.acomp = acomp;
-        this.preco = 0;
+        this.preco = calcularPreco();
     }
     public void setPreco(float preco){
         this.preco = preco;
+    }
+    public float getPreco(){
+        return preco;
     }
 
     public String getPao() {
@@ -44,33 +47,30 @@ public class Sanduba extends Sanduiche{
     
     public float calcularPreco(){
         Pedido p = new Pedido();
-        float resultado= 0;
         if(this.getTamanho().equals("Pequeno")){         
-            resultado = (p.getPreco(this.getSabor(), p.getPro())+
+            this.preco = (p.getPreco(this.getSabor(), p.getPro())+
                         p.getPreco(this.getMolho(), p.getMo())+
                         p.getPreco(this.getSalada(), p.getSal())+
                         p.getPreco(this.getAcompanhamento(), p.getAcom())+
-                        p.getPreco(this.getPao(),p.getPaes())+10
-                                );         
+                        p.getPreco(this.getPao(),p.getPaes())+10);
+            
         }
         else if(this.getTamanho().equals("Medio")){         
-            resultado = (p.getPreco(this.getSabor(), p.getPro())+
+            this.preco = (p.getPreco(this.getSabor(), p.getPro())+
                         p.getPreco(this.getMolho(), p.getMo())+
                         p.getPreco(this.getSalada(), p.getSal())+
                         p.getPreco(this.getAcompanhamento(), p.getAcom())+
-                        p.getPreco(this.getPao(),p.getPaes())+15
-                                );         
+                        p.getPreco(this.getPao(),p.getPaes())+15); 
         }
         else if(this.getTamanho().equals("Grande")){         
-            resultado = (p.getPreco(this.getSabor(), p.getPro())+
+            this.preco = (p.getPreco(this.getSabor(), p.getPro())+
                         p.getPreco(this.getMolho(), p.getMo())+
                         p.getPreco(this.getSalada(), p.getSal())+
                         p.getPreco(this.getAcompanhamento(), p.getAcom())+
-                        p.getPreco(this.getPao(),p.getPaes())+20
-                                );         
+                        p.getPreco(this.getPao(),p.getPaes())+20);
+
         }
-        this.setPreco(resultado);
-        return resultado;
+        return this.preco;
     }
     
 }

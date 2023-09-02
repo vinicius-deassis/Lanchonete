@@ -42,9 +42,7 @@ public class Carrinho{
                 mensagem = "Não há sanduiches no carrinho!";                     
             }else{
                 int opcaoSanduba = -1;
-                while (opcaoSanduba < 0 || opcaoSanduba > sandubas.size()) {
-                        
-                   
+                while (opcaoSanduba < 0 || opcaoSanduba > sandubas.size()) {                  
                     for (int i = 0; i < sandubas.size(); i++) {
                         mensagem += (i) + 1 + ". " + sandubas.get(i) + "\n";
                     }                 
