@@ -12,20 +12,20 @@ import java.util.ArrayList;
  */
 public class Carrinho{
 
-    private ArrayList<Sanduiche> sandubas;
+    private ArrayList<Sanduba> sandubas;
     private float total;
 
     public Carrinho(){
-        this.sandubas = new ArrayList<Sanduiche>();
+        this.sandubas = new ArrayList<Sanduba>();
         this.total = 0.0f;
     }
 
-    public void adicionarSanduba(Sanduiche sanduba){
+    public void adicionarSanduba(Sanduba sanduba){
         this.sandubas.add(sanduba);
         this.total += sanduba.getPreco();
     }
     
-    public void removerSanduba(Sanduiche sanduba){
+    public void removerSanduba(Sanduba sanduba){
         this.sandubas.remove(sanduba);
         this.total -= sanduba.getPreco();
     }
@@ -36,7 +36,7 @@ public class Carrinho{
     }
     
     public String verCarrinho(){
-         ArrayList<Sanduiche> listSandubas = getSandubas();
+         ArrayList<Sanduba> listSandubas = getSandubas();
          String mensagem = "";
             if (listSandubas.isEmpty()){
                 mensagem = "Não há sanduiches no carrinho!";                     
@@ -52,11 +52,11 @@ public class Carrinho{
         return mensagem;
     }
 
-    public ArrayList<Sanduiche> getSandubas(){
+    public ArrayList<Sanduba> getSandubas(){
         return this.sandubas;
     }
     
-    public void setSandubas(ArrayList<Sanduiche> sandubas){
+    public void setSandubas(ArrayList<Sanduba> sandubas){
         this.sandubas = sandubas;
     }
     public float getTotal(){
@@ -66,10 +66,10 @@ public class Carrinho{
 
      // método que calcula o total do pedido
 
-     public float calcularTotal(ArrayList<Sanduiche> sandubas){
+     public float calcularTotal(ArrayList<Sanduba> sandubas){
         float total = 0f;
 
-        for (Sanduiche sanduba: sandubas){
+        for (Sanduba sanduba: sandubas){
             total += sanduba.getPreco();
         }
         return total;

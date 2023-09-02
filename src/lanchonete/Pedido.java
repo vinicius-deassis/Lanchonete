@@ -55,7 +55,7 @@ public class Pedido {
         Item a2 = new Item("Coca",5f);
         Item a3 = new Item("Nuggets",8f);
         Item a4 = new Item("Guarana",8f);
-        Item a5 = new Item("Nada",0f);
+        Item a5 = new Item("SEM ACOMP.",0f);
         acomps.add(a1);
         acomps.add(a2);
         acomps.add(a3);
@@ -101,23 +101,23 @@ public class Pedido {
         String all = "";
         all+= "PROTEINAS:\n";
         for(Item i:proteinas){
-            all+= i.getDesc()+" = "+i.getPreco()+"\n";
+            all+= i.getDesc()+"   -   R$"+i.getPreco()+"0\n";
         }
-        all+= "SALADAS:\n";
+        all+= "\nSALADAS:\n";
         for(Item i:saladas){
-            all+= i.getDesc()+" = "+i.getPreco()+"\n";
+            all+= i.getDesc()+"   -   R$"+i.getPreco()+"0\n";
         }
-        all+= "MOLHOS:\n";
+        all+= "\nMOLHOS:\n";
         for(Item i:molhos){
-            all+= i.getDesc()+" = "+i.getPreco()+"\n";
+            all+= i.getDesc()+"   -   R$"+i.getPreco()+"0\n";
         }
-        all+= "ACOMPANHAMENTOS:\n";
+        all+= "\nACOMPANHAMENTOS:\n";
         for(Item i:acomps){
-            all+= i.getDesc()+" = "+i.getPreco()+"\n";
+            all+= i.getDesc()+"   -   R$"+i.getPreco()+"0\n";
         }
-        all+= "PAES:\n";
+        all+= "\nPAES:\n";
         for(Item i:paes){
-            all+= i.getDesc()+" = "+i.getPreco()+"\n";
+            all+= i.getDesc()+"   -   R$"+i.getPreco()+"0\n";
         }
         return all;
     }

@@ -25,24 +25,6 @@ public class Cliente{
         
     }
 
-    /*public void adicionarSanduba(Sanduiche sanduba){
-        this.carrinho.adicionarSanduba(sanduba);
-    }
-
-    public void removerSanduba(Sanduiche sanduba){
-        this.carrinho.removerSanduba(sanduba);
-    }
-
-    public double getTotal(){
-        return this.carrinho.getTotal();
-    }
-
-    public void confirmarPedido(){
-        Pedido pedido = new Pedido(getbairroeco());
-        this.historicoDePedidos.add(pedido);
-        this.carrinho.limparCarrinho();
-    }*/
-
     public String getNome() {
         return nome;
     }
@@ -81,31 +63,3 @@ public class Cliente{
                 "\nPagamento: "+getPay();
     }
 }
- /*   
-    public String getbairroeco(){
-        String bairroeco = this.bairro + "," + this.pay;
-        return bairroeco;
-    }
-
-    public String getNome(){
-        return this.nome;
-    }
-
-    public String getTelefone(){
-        return this.telefone;
-    }
-    
-    
-    public String getBairro(){
-        return this.bairro;
-    }
-    
-    public void setNome(String nome){
-        this.nome = nome;
-    }
-    
-    public void setBairro(String bairro){
-        this.bairro = bairro;
-    }
-}
-*/

@@ -1,62 +1,73 @@
-package lanchonete;
-
-
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
+package lanchonete; 
 /**
  *
- * @author Nicolas
+ * @author USER
  */
-public class Sanduiche{
-
-    protected String sabor;
-    protected String tamanho;
+public class Sanduiche extends Sanduba{
+    protected String pao,salada,molho,acomp;
     protected float preco;
 
-    public Sanduiche (String sabor, String tamanho){
-        this.sabor = sabor;
-        this.tamanho = tamanho;
-        this.preco = calcularPreco(tamanho);
+    public Sanduiche(String sabor, String tamanho, String pao, String salada, 
+            String molho , String acomp) {
+        super(sabor, tamanho);
+        this.molho = molho;
+        this.pao = pao;
+        this.salada = salada;
+        this.acomp = acomp;
+        this.preco = calcularPreco();
     }
-
-    public String getSabor(){
-        return sabor;
-    }
-
-    public void setSabor(String sabor){
-        this.sabor = sabor;
-    }
-
-    public String getTamanho(){
-        return tamanho;
-    }
-
-    public void setTamanho(String tamanho){
-        this.tamanho = tamanho;
-    }
-    
-    public float calcularPreco(String tamanho){
-        if (tamanho.equals("Pequena")){
-            this.preco = 15f;
-            
-        }else if (tamanho.equals("Média")){
-            this.preco = 20f;
-        } else if (tamanho.equals("Grande")){
-            this.preco = 30f;
-        }
-        return this.preco;
+    public void setPreco(float preco){
+        this.preco = preco;
     }
     public float getPreco(){
         return preco;
     }
 
-    @Override
-    public String toString(){
-        return " " + getSabor() + "(" + getTamanho() + " - " + getPreco() + ")\n";
-
+    public String getPao() {
+        return pao;
     }
+
+    public String getSalada() {
+        return salada;
+    }
+
+    public String getMolho() {
+        return molho;
+    }
+    public String getAcompanhamento() {
+        return acomp;
+    }
+    
+    public float calcularPreco(){
+        Pedido p = new Pedido();
+        if(this.getTamanho().equals("Pequeno")){         
+            this.preco = (p.getPreco(this.getSabor(), p.getPro())+
+                        p.getPreco(this.getMolho(), p.getMo())+
+                        p.getPreco(this.getSalada(), p.getSal())+
+                        p.getPreco(this.getAcompanhamento(), p.getAcom())+
+                        p.getPreco(this.getPao(),p.getPaes())+10);
+            
+        }
+        else if(this.getTamanho().equals("Medio")){         
+            this.preco = (p.getPreco(this.getSabor(), p.getPro())+
+                        p.getPreco(this.getMolho(), p.getMo())+
+                        p.getPreco(this.getSalada(), p.getSal())+
+                        p.getPreco(this.getAcompanhamento(), p.getAcom())+
+                        p.getPreco(this.getPao(),p.getPaes())+15); 
+        }
+        else if(this.getTamanho().equals("Grande")){         
+            this.preco = (p.getPreco(this.getSabor(), p.getPro())+
+                        p.getPreco(this.getMolho(), p.getMo())+
+                        p.getPreco(this.getSalada(), p.getSal())+
+                        p.getPreco(this.getAcompanhamento(), p.getAcom())+
+                        p.getPreco(this.getPao(),p.getPaes())+20);
+
+        }
+        return this.preco;
+    }
+    
 }

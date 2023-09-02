@@ -165,7 +165,7 @@ public class Informacoes extends javax.swing.JFrame {
               }
         
         else {
-            JOptionPane.showMessageDialog(null,"Cadastro criado!");
+            JOptionPane.showMessageDialog(null,"Cadastro criado.\n" + "Bem vindo, " + nome+ "!");
             Sanduiches mtg;
             mtg = new Sanduiches(inputNome.getText(), comboBairro.getSelectedItem(),
                     inputTel.getText(), comboPay.getSelectedItem());

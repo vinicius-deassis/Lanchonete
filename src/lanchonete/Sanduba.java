@@ -1,76 +1,67 @@
+package lanchonete;
+
+
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package lanchonete;
-import java.util.ArrayList;
-import lanchonete.Pedido;
- 
+
 /**
  *
- * @author USER
+ * @author Nicolas
  */
-public class Sanduba extends Sanduiche{
-    protected String pao,salada,molho,acomp;
+public class Sanduba{
+
+    protected String sabor;
+    protected String tamanho;
     protected float preco;
 
-    public Sanduba(String sabor, String tamanho, String pao, String salada, 
-            String molho , String acomp) {
-        super(sabor, tamanho);
-        this.molho = molho;
-        this.pao = pao;
-        this.salada = salada;
-        this.acomp = acomp;
-        this.preco = calcularPreco();
+    public Sanduba (String sabor, String tamanho){
+        this.sabor = sabor;
+        this.tamanho = tamanho;
+        this.preco = calcularPreco(tamanho);
     }
-    public void setPreco(float preco){
-        this.preco = preco;
+
+    public String getSabor(){
+        return sabor;
+    }
+
+    public void setSabor(String sabor){
+        this.sabor = sabor;
+    }
+
+    public String getTamanho(){
+        return tamanho;
+    }
+
+    public void setTamanho(String tamanho){
+        this.tamanho = tamanho;
+    }
+    
+    public float calcularPreco(String tamanho){
+        switch (tamanho) {
+            case "Pequena":
+                this.preco = 15f;
+                break;
+            case "Média":
+                this.preco = 20f;
+                break;
+            case "Grande":
+                this.preco = 30f;
+                break;
+            default:
+                break;
+        }
+        return this.preco;
     }
     public float getPreco(){
         return preco;
     }
 
-    public String getPao() {
-        return pao;
-    }
+    @Override
+    public String toString(){
+        return " " + getSabor() + "(" + getTamanho() + " - " + getPreco() + ")\n";
 
-    public String getSalada() {
-        return salada;
     }
-
-    public String getMolho() {
-        return molho;
-    }
-    public String getAcompanhamento() {
-        return acomp;
-    }
-    
-    public float calcularPreco(){
-        Pedido p = new Pedido();
-        if(this.getTamanho().equals("Pequeno")){         
-            this.preco = (p.getPreco(this.getSabor(), p.getPro())+
-                        p.getPreco(this.getMolho(), p.getMo())+
-                        p.getPreco(this.getSalada(), p.getSal())+
-                        p.getPreco(this.getAcompanhamento(), p.getAcom())+
-                        p.getPreco(this.getPao(),p.getPaes())+10);
-            
-        }
-        else if(this.getTamanho().equals("Medio")){         
-            this.preco = (p.getPreco(this.getSabor(), p.getPro())+
-                        p.getPreco(this.getMolho(), p.getMo())+
-                        p.getPreco(this.getSalada(), p.getSal())+
-                        p.getPreco(this.getAcompanhamento(), p.getAcom())+
-                        p.getPreco(this.getPao(),p.getPaes())+15); 
-        }
-        else if(this.getTamanho().equals("Grande")){         
-            this.preco = (p.getPreco(this.getSabor(), p.getPro())+
-                        p.getPreco(this.getMolho(), p.getMo())+
-                        p.getPreco(this.getSalada(), p.getSal())+
-                        p.getPreco(this.getAcompanhamento(), p.getAcom())+
-                        p.getPreco(this.getPao(),p.getPaes())+20);
-
-        }
-        return this.preco;
-    }
-    
 }

@@ -5,13 +5,12 @@
 package GUI;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import javax.swing.JOptionPane;
 import lanchonete.Carrinho;
 import lanchonete.Cliente;
 import lanchonete.Pedido;
-import lanchonete.Sanduba;
 import lanchonete.Sanduiche;
+import lanchonete.Sanduba;
 
 /**
  *
@@ -19,7 +18,7 @@ import lanchonete.Sanduiche;
  */
 public class Sanduiches extends javax.swing.JFrame {    
     lanchonete.Carrinho carrinho = new Carrinho();
-    private ArrayList<Sanduiche> sandubas;
+    private ArrayList<Sanduba> sandubas;
     public String name,num,bairro,pay;
     Pedido p = new Pedido();
     
@@ -70,7 +69,7 @@ public class Sanduiches extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         cardapio = new javax.swing.JButton();
-        buttonCardapioSanduba = new javax.swing.JButton();
+        buttonCombo = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -120,7 +119,7 @@ public class Sanduiches extends javax.swing.JFrame {
             }
         });
 
-        comboAcomp.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Batata", "Coca", "Nuggets", "Guarana", "Nada" }));
+        comboAcomp.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Batata", "Coca", "Nuggets", "Guarana", "SEM ACOMP." }));
         comboAcomp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboAcompActionPerformed(evt);
@@ -137,9 +136,9 @@ public class Sanduiches extends javax.swing.JFrame {
 
         jLabel4.setText("Molho");
 
-        jLabel5.setText("Adicional");
+        jLabel5.setText("Acompanhamento");
 
-        comboPao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Frances", "3 queijos", "Integral", "9 graos", "Italiano com Queijo" }));
+        comboPao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Francês", "3 queijos", "Integral", "9 graos", "Italiano com Queijo" }));
         comboPao.setToolTipText("");
         comboPao.addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentAdded(java.awt.event.ContainerEvent evt) {
@@ -166,6 +165,7 @@ public class Sanduiches extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(255, 0, 0));
 
         jBoxSanduba.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Almondegas", "Calabresa", "Costela", "Nordestina", "Frango" }));
+        jBoxSanduba.setToolTipText("");
         jBoxSanduba.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBoxSandubaActionPerformed(evt);
@@ -214,10 +214,10 @@ public class Sanduiches extends javax.swing.JFrame {
             }
         });
 
-        buttonCardapioSanduba.setText("Cardapio");
-        buttonCardapioSanduba.addActionListener(new java.awt.event.ActionListener() {
+        buttonCombo.setText("Cardápio");
+        buttonCombo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonCardapioSandubaActionPerformed(evt);
+                buttonComboActionPerformed(evt);
             }
         });
 
@@ -225,19 +225,19 @@ public class Sanduiches extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(66, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel1)
                     .addComponent(jLabel4)
-                    .addComponent(comboMolho, 0, 160, Short.MAX_VALUE)
-                    .addComponent(comboPao, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(comboMolho, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(comboPao, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel2)
                     .addComponent(jLabel5)
-                    .addComponent(comboPro, 0, 158, Short.MAX_VALUE)
-                    .addComponent(comboAcomp, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(comboPro, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(comboAcomp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -246,44 +246,33 @@ public class Sanduiches extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(comboSalada, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(comboTam, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel10)
                 .addGap(56, 56, 56))
             .addGroup(layout.createSequentialGroup()
-                .addGap(103, 103, 103)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jBoxSanduba, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel12))
-                        .addGap(6, 6, 6)
-                        .addComponent(buttonAddSanduiche))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(212, 212, 212)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel9)
-                            .addComponent(jBoxTamanho, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel8))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(163, 163, 163)
+                        .addGap(191, 191, 191)
                         .addComponent(jLabel7))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(114, 114, 114)
+                        .addGap(153, 153, 153)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel8)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(cardapio)
-                                .addGap(18, 18, 18)
-                                .addComponent(buttonVerCarrinho)))
-                        .addGap(18, 18, 18)
-                        .addComponent(buttonFinalizar))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(157, 157, 157)
-                        .addComponent(ButtonAddSanduba)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel12)
+                                .addComponent(jBoxSanduba, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(ButtonAddSanduba)
+                            .addComponent(buttonAddSanduiche)
+                            .addComponent(buttonVerCarrinho))
                         .addGap(34, 34, 34)
-                        .addComponent(buttonCardapioSanduba)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(buttonFinalizar)
+                            .addComponent(cardapio)
+                            .addComponent(buttonCombo)
+                            .addComponent(jBoxTamanho, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel9))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -291,60 +280,61 @@ public class Sanduiches extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel7)
-                .addGap(2, 2, 2)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
                             .addComponent(jLabel2)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel10))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(comboPro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(comboPao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(13, 13, 13)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(comboMolho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(comboAcomp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGap(13, 13, 13)
+                            .addComponent(jLabel5)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(comboAcomp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(4, 4, 4)
+                            .addComponent(jLabel3)
+                            .addGap(2, 2, 2)
+                            .addComponent(comboSalada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(13, 13, 13)
+                            .addComponent(jLabel6)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(comboTam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(4, 4, 4)
-                        .addComponent(jLabel3)
-                        .addGap(2, 2, 2)
-                        .addComponent(comboSalada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(13, 13, 13)
-                        .addComponent(jLabel6)
+                        .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(comboTam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(31, 31, 31)
+                        .addComponent(comboPao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(13, 13, 13)
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(comboMolho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel10)
+                .addGap(23, 23, 23)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ButtonAddSanduba)
-                    .addComponent(buttonCardapioSanduba))
-                .addGap(51, 51, 51)
+                    .addComponent(buttonCombo))
+                .addGap(18, 18, 18)
                 .addComponent(jLabel8)
-                .addGap(2, 2, 2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addComponent(buttonAddSanduiche))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel9)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jBoxTamanho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel12)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jBoxSanduba, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonFinalizar)
-                    .addComponent(buttonVerCarrinho)
-                    .addComponent(cardapio))
-                .addGap(62, 62, 62))
+                        .addComponent(jLabel9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jBoxTamanho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(buttonAddSanduiche)
+                            .addComponent(cardapio))
+                        .addGap(71, 71, 71)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(buttonFinalizar)
+                            .addComponent(buttonVerCarrinho)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jBoxSanduba, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         pack();
@@ -375,8 +365,8 @@ public class Sanduiches extends javax.swing.JFrame {
         String sal = (String)comboSalada.getSelectedItem();
         String acomp = (String)comboAcomp.getSelectedItem();
         
-        Sanduba s = new Sanduba(pro,tam,pao,sal,mol,acomp);
-        JOptionPane.showMessageDialog(null, "O total ficou R$"+s.calcularPreco()+" reais.");
+        Sanduiche s = new Sanduiche(pro,tam,pao,sal,mol,acomp);
+        JOptionPane.showMessageDialog(null, "O total ficou R$"+s.calcularPreco()+"0 reais.");
         s.setPreco(s.calcularPreco());
         carrinho.adicionarSanduba(s);
         System.out.println(carrinho);
@@ -388,7 +378,7 @@ public class Sanduiches extends javax.swing.JFrame {
         if ((saborsanduba.equals("Selecione um sanduiche...")) || (tamanhosanduba.equals("Selecione um tamanho..."))){
             JOptionPane.showMessageDialog(null, "Selecione um sabor ou um tamanho válido!");
     }   else{
-            Sanduiche sanduba = new Sanduiche(saborsanduba, tamanhosanduba);
+            Sanduba sanduba = new Sanduba(saborsanduba, tamanhosanduba);
             carrinho.adicionarSanduba(sanduba);          
             JOptionPane.showMessageDialog(null,"sanduiche de " + saborsanduba + " adicionada ao carrinho!");
         }  
@@ -417,8 +407,8 @@ public class Sanduiches extends javax.swing.JFrame {
                     float valorTotal = carrinho.calcularTotal(sandubas);
                     String sanduichesTexto = "";
 
-                    for (Sanduiche p : carrinho.getSandubas()) {
-                        sanduichesTexto += "sanduiche de " + p.getSabor() + " - " + p.getTamanho() + " - R$" + p.getPreco() + "\n";
+                    for (Sanduba p : carrinho.getSandubas()) {
+                        sanduichesTexto += "sanduiche de " + p.getSabor() + " - " + p.getTamanho() + " - R$" + p.getPreco() + "0\n";
                 }
 
                 JOptionPane.showMessageDialog(null, 
@@ -448,13 +438,16 @@ public class Sanduiches extends javax.swing.JFrame {
 
     private void cardapioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cardapioActionPerformed
         // TODO add your handling code here:
-        CardapioGUI c = new CardapioGUI();
+        Cardapio c = new Cardapio();
         c.setVisible(true);
     }//GEN-LAST:event_cardapioActionPerformed
 
-    private void buttonCardapioSandubaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCardapioSandubaActionPerformed
+    private void buttonComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonComboActionPerformed
+        //Combo a = new Combo();
+        //a.setVisible(true);
+        
         JOptionPane.showMessageDialog(null, p.showItens());
-    }//GEN-LAST:event_buttonCardapioSandubaActionPerformed
+    }//GEN-LAST:event_buttonComboActionPerformed
 
     /**
      * @param args the command line arguments
@@ -491,7 +484,7 @@ public class Sanduiches extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonAddSanduba;
     private javax.swing.JButton buttonAddSanduiche;
-    private javax.swing.JButton buttonCardapioSanduba;
+    private javax.swing.JButton buttonCombo;
     public javax.swing.JButton buttonFinalizar;
     private javax.swing.JButton buttonVerCarrinho;
     private javax.swing.JButton cardapio;

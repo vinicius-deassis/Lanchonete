@@ -8,7 +8,7 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 import lanchonete.Carrinho;
 import lanchonete.Cliente;
-import lanchonete.Sanduiche;
+import lanchonete.Sanduba;
 /**
  *
  * @author Nicolas
@@ -19,8 +19,8 @@ public class InterfaceUser{
         Carrinho carrinho = new Carrinho();
         Cliente cliente1;
         double preco;
-        Sanduiche sanduiche;
-        ArrayList<Sanduiche> sandubas;
+        Sanduba sanduiche;
+        ArrayList<Sanduba> sandubas;
         String sabor, tamanho = null;
         Scanner s = new Scanner(System.in);
         boolean run = true;
@@ -101,7 +101,7 @@ public class InterfaceUser{
 
                     if (tamanho.equals("Pequena")){
                         preco = 25.0;
-                        sanduiche = new Sanduiche(sabor, tamanho);
+                        sanduiche = new Sanduba(sabor, tamanho);
                         carrinho.adicionarSanduba(sanduiche);
                         
                         JOptionPane.showMessageDialog(null,"sanduiche de " + sanduiche.getSabor() + " adicionada ao carrinho!");
@@ -109,14 +109,14 @@ public class InterfaceUser{
                           } 
                     else if(tamanho.equals("Média")){
                         preco = 40.0;
-                        sanduiche = new Sanduiche(sabor, tamanho);
+                        sanduiche = new Sanduba(sabor, tamanho);
                         carrinho.adicionarSanduba(sanduiche);
                         
                         JOptionPane.showMessageDialog(null, "sanduiche de " + sanduiche.getSabor() + " adicionada ao carrinho!");
                         break;
                      }  else if(tamanho.equals("Grande")){
                         preco = 60.0;
-                        sanduiche = new Sanduiche(sabor, tamanho);
+                        sanduiche = new Sanduba(sabor, tamanho);
                         carrinho.adicionarSanduba(sanduiche);
                         
                         JOptionPane.showMessageDialog(null, "sanduiche de " + sanduiche.getSabor() + " adicionada ao carrinho!");
@@ -155,7 +155,7 @@ public class InterfaceUser{
                         
                        
                     
-                            Sanduiche sanduicheRemovida = sandubas.remove(opcaosanduiche - 1);
+                            Sanduba sanduicheRemovida = sandubas.remove(opcaosanduiche - 1);
                             JOptionPane.showMessageDialog(null, "\nItem " + sanduicheRemovida.getSabor() + " (" + sanduicheRemovida.getTamanho() + ") removida do carrinho!");
                             break;
                         }
@@ -195,7 +195,7 @@ public class InterfaceUser{
                             float valorTotal = carrinho.calcularTotal(sandubas);
                             String sanduichesTexto = "";
                         
-                            for (Sanduiche p : carrinho.getSandubas()) {
+                            for (Sanduba p : carrinho.getSandubas()) {
                                 sanduichesTexto += "sanduiche de " + p.getSabor() + " - " + p.getTamanho() + " - R$" + p.getPreco() + "\n";
                         }
                        

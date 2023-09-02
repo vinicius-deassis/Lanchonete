@@ -48,24 +48,24 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="66" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="comboMolho" alignment="0" pref="160" max="32767" attributes="0"/>
-                  <Component id="comboPao" alignment="0" max="32767" attributes="0"/>
+                  <Component id="comboMolho" alignment="0" max="32767" attributes="0"/>
+                  <Component id="comboPao" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                  <Component id="comboPro" pref="158" max="32767" attributes="0"/>
-                  <Component id="comboAcomp" alignment="0" max="32767" attributes="0"/>
+                  <Component id="comboPro" max="32767" attributes="0"/>
+                  <Component id="comboAcomp" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -73,55 +73,39 @@
                   <Component id="comboSalada" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
                   <Component id="comboTam" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jBoxSanduba" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                      <Component id="buttonAddSanduiche" min="-2" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="212" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                          <Component id="jBoxTamanho" min="-2" pref="97" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                   </Group>
-              </Group>
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="163" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="191" max="-2" attributes="0"/>
                       <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="114" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Component id="cardapio" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="buttonVerCarrinho" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                              <Component id="jBoxSanduba" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <Component id="ButtonAddSanduba" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonAddSanduiche" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonVerCarrinho" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="buttonFinalizar" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
-                      <Component id="ButtonAddSanduba" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                      <Component id="buttonCardapioSanduba" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="buttonFinalizar" min="-2" max="-2" attributes="0"/>
+                          <Component id="cardapio" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonCombo" min="-2" max="-2" attributes="0"/>
+                          <Component id="jBoxTamanho" min="-2" pref="97" max="-2" attributes="0"/>
+                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -133,74 +117,72 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="comboPro" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="comboAcomp" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="comboPro" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="comboPao" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel4" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="comboMolho" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="comboAcomp" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                          <Component id="comboSalada" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="comboTam" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                      <Component id="comboSalada" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
-                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="comboTam" min="-2" max="-2" attributes="0"/>
+                      <Component id="comboPao" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="comboMolho" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="ButtonAddSanduba" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="buttonCardapioSanduba" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="buttonCombo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
-                      <Component id="buttonAddSanduiche" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBoxTamanho" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="buttonAddSanduiche" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cardapio" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="buttonFinalizar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonVerCarrinho" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jBoxTamanho" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jBoxSanduba" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBoxSanduba" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="35" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="buttonFinalizar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="buttonVerCarrinho" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cardapio" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+              <EmptySpace pref="36" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -293,7 +275,7 @@
             <StringItem index="1" value="Coca"/>
             <StringItem index="2" value="Nuggets"/>
             <StringItem index="3" value="Guarana"/>
-            <StringItem index="4" value="Nada"/>
+            <StringItem index="4" value="SEM ACOMP."/>
           </StringArray>
         </Property>
       </Properties>
@@ -328,14 +310,14 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Adicional"/>
+        <Property name="text" type="java.lang.String" value="Acompanhamento"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="comboPao">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="5">
-            <StringItem index="0" value="Frances"/>
+            <StringItem index="0" value="Franc&#xea;s"/>
             <StringItem index="1" value="3 queijos"/>
             <StringItem index="2" value="Integral"/>
             <StringItem index="3" value="9 graos"/>
@@ -390,6 +372,7 @@
             <StringItem index="5" value="Frango"/>
           </StringArray>
         </Property>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBoxSandubaActionPerformed"/>
@@ -469,12 +452,12 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cardapioActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="buttonCardapioSanduba">
+    <Component class="javax.swing.JButton" name="buttonCombo">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Cardapio"/>
+        <Property name="text" type="java.lang.String" value="Card&#xe1;pio"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonCardapioSandubaActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonComboActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
