@@ -104,19 +104,19 @@ public class Cardapio extends javax.swing.JFrame {
 
         jLabel20.setText("P/M/G");
 
-        jLabel21.setText("R$ 20/40/60");
+        jLabel21.setText("R$ 20/25/30");
 
-        jLabel22.setText("R$ 20/40/60");
+        jLabel22.setText("R$ 20/25/30");
 
-        jLabel23.setText("R$ 20/40/60");
+        jLabel23.setText("R$ 20/25/30");
 
-        jLabel24.setText("R$ 20/40/60");
+        jLabel24.setText("R$ 20/25/30");
 
-        jLabel25.setText("R$ 20/40/60");
+        jLabel25.setText("R$ 20/25/30");
 
-        jLabel26.setText("R$ 20/40/60");
+        jLabel26.setText("R$ 20/25/30");
 
-        jLabel27.setText("R$ 20/40/60");
+        jLabel27.setText("R$ 20/25/30");
 
         Fechar.setText("OK");
         Fechar.addActionListener(new java.awt.event.ActionListener() {

@@ -102,7 +102,7 @@ public class Sanduiches extends javax.swing.JFrame {
 
         jLabel6.setText("Tamanho");
 
-        comboSalada.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tomate", "Alface", "Pepino", "Cebola Roxa", "Azeitona" }));
+        comboSalada.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tomate", "Pepino", "Alface", "Cebola Roxa", "Azeitona" }));
         comboSalada.setToolTipText("");
         comboSalada.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
